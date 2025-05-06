@@ -3,3 +3,13 @@
 
 doc
 docset
+!01-C++/proj/*
+!99.06-Powershell/proj/*
+
+.cache
+build
+.vs
+out
+bin
+01-C++/proj/MesonExample/meson.build
+01-C++/proj/MesonExample/mesonexample.cpp

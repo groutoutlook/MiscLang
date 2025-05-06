@@ -1,0 +1,29 @@
+shebang := if os() == 'windows' { 'pwsh.exe' } else { '/usr/bin/env pwsh' }
+set shell := ["pwsh", "-c"]
+set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
+set dotenv-load := true
+# INFO: really dont want to meddle with the .env, direnv is also related to this.
+# WARN: should have get them in .gitignore.
+set dotenv-filename	:= ".env"
+# set dotenv-required := true
+export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
+
+wt:
+    #!{{ shebang }}
+    wt -f new-tab -p "Developer PowerShell for VS 2022" -d  {{ invocation_directory() }} --tabColor '#FFFFFF'
+
+init: && build
+    meson init --force && meson build
+alias b := build
+build: 
+    ninja -Cbuild all
+
+# WARN: super clean. should not delete meson.build but I'm making an example.
+clean: 
+     @-rm ./build -Recurse -Force 2> $null
+     @rm ./meson.build -Recurse -Force ; rm {{file_stem(invocation_directory())}}.cpp
+     @Write-Host "Clean all successfully" -ForegroundColor Green
+
+alias r := run
+run *args:
+    #nothing yet...
