@@ -3,8 +3,6 @@
 
 doc
 docset
-!01-C++/proj/*
-!99.01-PowerShell/proj/*
 
 .cache
 build
