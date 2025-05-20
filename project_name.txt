@@ -47,6 +47,7 @@
 19.01-Lua\repo\readline.nvim
 24.01-PowerShell\proj\powershellConfig
 24.01-PowerShell\proj\registry-utils
+24.01-PowerShell\repo\PsFzfLite
 24.01-PowerShell\repo\windows-key-extractor
 24.02-Nushell\proj\nushellConfig
 24.02-Nushell\repo\nu_plugin_audio_hook

@@ -8,7 +8,7 @@ set dotenv-filename	:= ".env"
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 help:
-    @just --list -f "{{home_directory()}}/justfile"
+    @just --choose
 
 alias f := find
 [script]
@@ -19,6 +19,7 @@ find nest_level="3":
     } | ForEach-Object {
         $_.FullName.Substring($PWD.Path.Length + 1) >> project_name.txt
     }
+    
 alias j := jump
 [script]
 jump:
