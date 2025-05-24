@@ -12,8 +12,9 @@ _default:
 
 
 alias b := build
-build:
-    go build {{invocation_directory_native()}}
+[no-cd]
+build *args:
+    go build . {{args}}
     
 alias fmt := format
 format args="nothing":
