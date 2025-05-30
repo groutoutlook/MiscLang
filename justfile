@@ -13,17 +13,17 @@ help:
 alias f := find
 [script]
 find nest_level="3":
-    Clear-Content project_name.txt
+    Clear-Content project_name.md
     Get-ChildItem -Directory -Recurse | Where-Object {
         ($_.FullName -split '\\').Count -eq ($PWD.Path -split '\\').Count + {{nest_level}}
     } | ForEach-Object {
-        $_.FullName.Substring($PWD.Path.Length + 1) >> project_name.txt
+        $_.FullName.Substring($PWD.Path.Length + 1) >> project_name.md
     }
     
 alias j := jump
 [script]
 jump:
-    cat .\project_name.txt | fzf | % { Write-Output $_} 
+    cat .\project_name.md | fzf | % { Write-Output $_} 
     | % { [System.Windows.Forms.SendKeys]::SendWait("cd $($_.ToString())") }
 
 alias fmt := format
