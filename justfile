@@ -17,7 +17,7 @@ find nest_level="3":
     Get-ChildItem -Directory -Recurse | Where-Object {
         ($_.FullName -split '\\').Count -eq ($PWD.Path -split '\\').Count + {{nest_level}}
     } | ForEach-Object {
-        $_.FullName.Substring($PWD.Path.Length + 1) >> project_name.md
+        "- $($_.FullName.Substring($PWD.Path.Length + 1))`n" >> project_name.md
     }
     
 alias j := jump
