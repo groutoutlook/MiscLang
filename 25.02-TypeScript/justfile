@@ -15,10 +15,9 @@ build:
     # build task here
     # 
 alias r := run
-default_args := '.'
-[no-cd]
+default_args := 'args here'
 run args=default_args:
-    dotnet run {{args}}
+    @Write-Host {{default_args}} -ForegroundColor Red
 
 alias fmt := format
 format:

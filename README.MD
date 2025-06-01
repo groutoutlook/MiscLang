@@ -35,6 +35,7 @@
 - Lua
 ## 20 - Fourth-generation languages
 ## 21 - Functional languages
+- Dart
 ## 22 - Hardware description languages
 ## 23 - Imperative languages
 ## 24 - Interactive mode languages
