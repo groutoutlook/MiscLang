@@ -7,6 +7,12 @@
 			- Not really a language to say. Since languages contains instruction, those just has data
 	- My order is for prefix.
 		- after that, my preferences for that languages.
+- Language directory specific structure:
+	- `proj`    : active modified, greenfield projects from me
+	- `repo`    : minor modified, some library I archived for local building.
+	- `nightly` : less to no modified, projects to contribute, pull only to build myself.
+	- `book`    : book and docs, either I write myself or I pulled.
+
 ## 01 - Agent-oriented programming languages
 ## 02 - Array languages
 ## 03 - Aspect-oriented programming languages

@@ -42,6 +42,10 @@
 
 - 07.01-C++\repo\tinyfiledialogs
 
+- 07.02-Rust\book\crp
+
+- 07.02-Rust\book\First-Ever-mdBook
+
 - 07.02-Rust\nightly\coreutils
 
 - 07.02-Rust\nightly\fastside
