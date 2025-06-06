@@ -60,7 +60,7 @@
 
 - 07.02-Rust\nightly\kget
 
-- 07.02-Rust\nightly\mdfried
+- 07.02-Rust\nightly\mergiraf
 
 - 07.02-Rust\nightly\navi
 
@@ -74,13 +74,7 @@
 
 - 07.02-Rust\nightly\showKeyBoard
 
-- 07.02-Rust\nightly\snipt
-
-- 07.02-Rust\nightly\tabiew
-
 - 07.02-Rust\nightly\tailspin
-
-- 07.02-Rust\nightly\tiny
 
 - 07.02-Rust\nightly\uwu_colors
 
@@ -239,6 +233,10 @@
 - 45.02-autohotkey-ahk\repo\Viewport-for-AHKv2
 
 - 45.02-autohotkey-ahk\repo\windows-desktop-switcher
+
+- 48.03-hlsl\proj\windows-terminal-shader-gallery
+
+- 48.03-hlsl\proj\windows-terminal-shaders
 
 - 60.01-OpenScad\repo\OpenSCAD-Bulk-Export
 
