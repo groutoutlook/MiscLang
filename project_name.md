@@ -46,11 +46,17 @@
 
 - 07.02-Rust\book\First-Ever-mdBook
 
+- 07.02-Rust\nightly\clippy
+
 - 07.02-Rust\nightly\coreutils
+
+- 07.02-Rust\nightly\edit
 
 - 07.02-Rust\nightly\fastside
 
 - 07.02-Rust\nightly\fend
+
+- 07.02-Rust\nightly\flamegraph
 
 - 07.02-Rust\nightly\helix
 
@@ -66,11 +72,15 @@
 
 - 07.02-Rust\nightly\posh-fzf
 
+- 07.02-Rust\nightly\ripgrep
+
 - 07.02-Rust\nightly\rotz
 
 - 07.02-Rust\nightly\scooter
 
 - 07.02-Rust\nightly\sd
+
+- 07.02-Rust\nightly\serie
 
 - 07.02-Rust\nightly\showKeyBoard
 
@@ -78,11 +88,15 @@
 
 - 07.02-Rust\nightly\uwu_colors
 
+- 07.02-Rust\nightly\websocat
+
 - 07.02-Rust\nightly\zoxide
 
 - 07.02-Rust\proj\new
 
 - 07.02-Rust\repo\clock-rs
+
+- 07.02-Rust\repo\minijinja
 
 - 07.02-Rust\repo\sc_starter
 
@@ -94,6 +108,8 @@
 
 - 07.02-Rust\repo\wsl-dirutils
 
+- 07.03-C#\nightly\WinJump
+
 - 07.03-C#\proj\csharp-script
 
 - 07.03-C#\repo\HighlighterVS
@@ -104,23 +120,29 @@
 
 - 07.03-C#\repo\vs-NavigateTabGroups
 
+- 07.04-Golang\nightly\dblab
+
 - 07.04-Golang\nightly\fx
 
 - 07.04-Golang\nightly\jq-lsp
 
 - 07.04-Golang\nightly\lnk
 
+- 07.04-Golang\nightly\neko
+
 - 07.04-Golang\nightly\ov
+
+- 07.04-Golang\nightly\pprof
 
 - 07.04-Golang\nightly\soju
 
 - 07.04-Golang\nightly\sponge
 
-- 07.04-Golang\repo\neko
-
 - 07.04-Golang\repo\skate
 
 - 07.04-Golang\repo\wslpath
+
+- 07.05-libc\nightly\irssi
 
 - 07.05-libc\repo\c-starter
 
