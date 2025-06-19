@@ -72,6 +72,8 @@
 
 - 07.02-Rust\nightly\posh-fzf
 
+- 07.02-Rust\nightly\rcat
+
 - 07.02-Rust\nightly\ripgrep
 
 - 07.02-Rust\nightly\rotz
@@ -189,6 +191,8 @@
 - 24.01-PowerShell\proj\powershellConfig
 
 - 24.01-PowerShell\proj\registry-utils
+
+- 24.01-PowerShell\proj\Simple-Powershell-WebServer
 
 - 24.01-PowerShell\repo\PsFzfLite
 
