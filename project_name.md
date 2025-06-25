@@ -46,9 +46,9 @@
 
 - 07.02-Rust\book\First-Ever-mdBook
 
-- 07.02-Rust\nightly\clippy
-
 - 07.02-Rust\nightly\coreutils
+
+- 07.02-Rust\nightly\dqy
 
 - 07.02-Rust\nightly\edit
 
@@ -75,8 +75,6 @@
 - 07.02-Rust\nightly\rcat
 
 - 07.02-Rust\nightly\ripgrep
-
-- 07.02-Rust\nightly\rotz
 
 - 07.02-Rust\nightly\scooter
 
@@ -110,9 +108,13 @@
 
 - 07.02-Rust\repo\wsl-dirutils
 
+- 07.03-C#\nightly\PipeViewer
+
 - 07.03-C#\nightly\WinJump
 
 - 07.03-C#\proj\csharp-script
+
+- 07.03-C#\proj\serverless-csharp
 
 - 07.03-C#\repo\HighlighterVS
 
@@ -128,6 +130,8 @@
 
 - 07.04-Golang\nightly\jq-lsp
 
+- 07.04-Golang\nightly\leetgo
+
 - 07.04-Golang\nightly\lnk
 
 - 07.04-Golang\nightly\neko
@@ -135,6 +139,8 @@
 - 07.04-Golang\nightly\ov
 
 - 07.04-Golang\nightly\pprof
+
+- 07.04-Golang\nightly\sesh
 
 - 07.04-Golang\nightly\soju
 
@@ -180,8 +186,6 @@
 
 - 24.01-PowerShell\proj\gh_profile
 
-- 24.01-PowerShell\proj\Hey-Quick-Keyboard
-
 - 24.01-PowerShell\proj\misc_scripts
 
 - 24.01-PowerShell\proj\parse_keybinding
@@ -189,6 +193,8 @@
 - 24.01-PowerShell\proj\powershell_HTML
 
 - 24.01-PowerShell\proj\powershellConfig
+
+- 24.01-PowerShell\proj\PSRemote-Utils
 
 - 24.01-PowerShell\proj\registry-utils
 
