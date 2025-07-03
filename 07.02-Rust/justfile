@@ -7,6 +7,7 @@ set script-interpreter := ["pwsh.exe", "-NoLogo", "-Command"]
 # WARN: should have get them in .gitignore.
 set dotenv-filename	:= ".env"
 set unstable
+set fallback
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 _default:
@@ -16,6 +17,11 @@ alias b := build
 [no-cd]
 build:
     cargo build --release 
+
+alias bn := build-nightly
+[no-cd]
+build-nightly:
+    cargo +nightly build --release
 
 alias fmt := format
 format args="nothing":

@@ -10,6 +10,7 @@ set script-interpreter := ["pwsh.exe", "-NoLogo", "-Command"]
 # INFO: really dont want to meddle with the .env, direnv is also related to this.
 # WARN: should have get them in .gitignore.
 set dotenv-filename	:= ".env"
+set fallback
 set unstable
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
@@ -19,7 +20,8 @@ _default:
 alias b := build
 [no-cd]
 build *args:
-    go build . {{args}}
+    # go build . {{args}}
+    go build -ldflags="-s -w -X main.version=release"
     
 alias fmt := format
 format args="nothing":
