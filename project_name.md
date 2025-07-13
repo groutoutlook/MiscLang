@@ -42,11 +42,11 @@
 
 - 07.01-C++\repo\tinyfiledialogs
 
+- 07.01-C++\repo\vk-gltf-viewer
+
 - 07.02-Rust\book\crp
 
 - 07.02-Rust\book\First-Ever-mdBook
-
-- 07.02-Rust\nightly\clippy
 
 - 07.02-Rust\nightly\coreutils
 
@@ -68,27 +68,17 @@
 
 - 07.02-Rust\nightly\mergiraf
 
-- 07.02-Rust\nightly\navi
-
 - 07.02-Rust\nightly\posh-fzf
-
-- 07.02-Rust\nightly\rcat
 
 - 07.02-Rust\nightly\ripgrep
 
-- 07.02-Rust\nightly\rotz
+- 07.02-Rust\nightly\rmuxinator
 
 - 07.02-Rust\nightly\scooter
 
-- 07.02-Rust\nightly\sd
-
 - 07.02-Rust\nightly\serie
 
-- 07.02-Rust\nightly\showKeyBoard
-
-- 07.02-Rust\nightly\tailspin
-
-- 07.02-Rust\nightly\uwu_colors
+- 07.02-Rust\nightly\smartdns-rs
 
 - 07.02-Rust\nightly\websocat
 
@@ -110,9 +100,19 @@
 
 - 07.02-Rust\repo\wsl-dirutils
 
+- 07.03-C#\nightly\File-Tunnel
+
+- 07.03-C#\nightly\mRemoteNG
+
+- 07.03-C#\nightly\PipeViewer
+
+- 07.03-C#\nightly\ssh-copy-id-net
+
 - 07.03-C#\nightly\WinJump
 
 - 07.03-C#\proj\csharp-script
+
+- 07.03-C#\proj\serverless-csharp
 
 - 07.03-C#\repo\HighlighterVS
 
@@ -122,13 +122,15 @@
 
 - 07.03-C#\repo\vs-NavigateTabGroups
 
+- 07.04-Golang\nightly\cronitor-cli
+
 - 07.04-Golang\nightly\dblab
 
 - 07.04-Golang\nightly\fx
 
 - 07.04-Golang\nightly\jq-lsp
 
-- 07.04-Golang\nightly\lnk
+- 07.04-Golang\nightly\leetgo
 
 - 07.04-Golang\nightly\neko
 
@@ -136,9 +138,7 @@
 
 - 07.04-Golang\nightly\pprof
 
-- 07.04-Golang\nightly\soju
-
-- 07.04-Golang\nightly\sponge
+- 07.04-Golang\nightly\q
 
 - 07.04-Golang\repo\skate
 
@@ -180,8 +180,6 @@
 
 - 24.01-PowerShell\proj\gh_profile
 
-- 24.01-PowerShell\proj\Hey-Quick-Keyboard
-
 - 24.01-PowerShell\proj\misc_scripts
 
 - 24.01-PowerShell\proj\parse_keybinding
@@ -190,9 +188,15 @@
 
 - 24.01-PowerShell\proj\powershellConfig
 
+- 24.01-PowerShell\proj\PSRemote-Utils
+
 - 24.01-PowerShell\proj\registry-utils
 
 - 24.01-PowerShell\proj\Simple-Powershell-WebServer
+
+- 24.01-PowerShell\repo\amt-sdk-20-0-0-1
+
+- 24.01-PowerShell\repo\intelvpromodule-20-0-0-1
 
 - 24.01-PowerShell\repo\PsFzfLite
 
