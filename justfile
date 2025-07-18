@@ -7,6 +7,9 @@ set unstable
 set dotenv-filename	:= ".env"
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
+_default:
+    @just --list
+
 help:
     @just --choose
 
@@ -40,3 +43,16 @@ var_test := "test format"
 alias t := test
 test:
     # also something directly test behaviour.
+
+
+# INFO: it's heere mostly because historic reason.
+alias td := track_dir
+[script]
+track_dir:
+    Get-ChildItem -Directory -Recurse | Where-Object {
+        ($_.FullName -split '\\').Count -eq ($PWD.Path -split '\\').Count + 2
+    } | ForEach-Object {
+        $keepingDir = "$_/.keep"
+        New-Item $keepingDir -Force
+        git add $keepingDir --force
+    }

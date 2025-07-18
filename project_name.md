@@ -80,6 +80,8 @@
 
 - 07.02-Rust\nightly\smartdns-rs
 
+- 07.02-Rust\nightly\vsp-router
+
 - 07.02-Rust\nightly\websocat
 
 - 07.02-Rust\nightly\zoxide
