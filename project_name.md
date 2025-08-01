@@ -50,6 +50,8 @@
 
 - 07.02-Rust\nightly\coreutils
 
+- 07.02-Rust\nightly\domain-check
+
 - 07.02-Rust\nightly\edit
 
 - 07.02-Rust\nightly\fastside
@@ -60,6 +62,8 @@
 
 - 07.02-Rust\nightly\helix
 
+- 07.02-Rust\nightly\icann-rdap
+
 - 07.02-Rust\nightly\igrep
 
 - 07.02-Rust\nightly\kanata
@@ -68,15 +72,21 @@
 
 - 07.02-Rust\nightly\mergiraf
 
+- 07.02-Rust\nightly\microbin
+
 - 07.02-Rust\nightly\posh-fzf
 
 - 07.02-Rust\nightly\ripgrep
 
 - 07.02-Rust\nightly\rmuxinator
 
+- 07.02-Rust\nightly\rustypaste
+
 - 07.02-Rust\nightly\scooter
 
 - 07.02-Rust\nightly\serie
+
+- 07.02-Rust\nightly\sig
 
 - 07.02-Rust\nightly\smartdns-rs
 
@@ -130,8 +140,6 @@
 
 - 07.04-Golang\nightly\fx
 
-- 07.04-Golang\nightly\jq-lsp
-
 - 07.04-Golang\nightly\leetgo
 
 - 07.04-Golang\nightly\neko
@@ -140,13 +148,9 @@
 
 - 07.04-Golang\nightly\pprof
 
-- 07.04-Golang\nightly\q
-
 - 07.04-Golang\repo\skate
 
 - 07.04-Golang\repo\wslpath
-
-- 07.05-libc\nightly\irssi
 
 - 07.05-libc\repo\c-starter
 
@@ -192,6 +196,8 @@
 
 - 24.01-PowerShell\proj\PSRemote-Utils
 
+- 24.01-PowerShell\proj\pwsh-star-coor-related
+
 - 24.01-PowerShell\proj\registry-utils
 
 - 24.01-PowerShell\proj\Simple-Powershell-WebServer
@@ -204,11 +210,15 @@
 
 - 24.01-PowerShell\repo\PSTimers
 
+- 24.01-PowerShell\repo\sandbox
+
 - 24.01-PowerShell\repo\steam-osk-mouse-blocker
 
 - 24.01-PowerShell\repo\toggle-mouse
 
 - 24.01-PowerShell\repo\windows-key-extractor
+
+- 24.01-PowerShell\repo\wsbConfig
 
 - 24.02-Nushell\proj\nushellConfig
 
@@ -221,6 +231,8 @@
 - 25.01-Python\nightly\ninjatracing
 
 - 25.01-Python\nightly\visidata
+
+- 25.01-Python\proj\OCR-Parsing-Coor
 
 - 25.02-TypeScript\nightly\mpls-vscode-client
 
