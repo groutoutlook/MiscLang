@@ -2,7 +2,7 @@ shebang := if os() == 'windows' { 'pwsh.exe' } else { '/usr/bin/env pwsh' }
 set shell := ["pwsh", "-c"]
 set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
 set dotenv-load := true
-set script-interpreter := ["pwsh.exe", "-NoLogo", "-Command"]
+set script-interpreter := ["pwsh.exe", "-NoProfile", "-NoLogo", "-Command"]
 # INFO: really dont want to meddle with the .env, direnv is also related to this.
 # WARN: should have get them in .gitignore.
 set dotenv-filename	:= ".env"
@@ -41,3 +41,8 @@ test *args=var_test: (format args)
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
+
+alias pu := pull-update
+[script,no-cd]
+pull-update:
+    gci -Directory | % {git -C $_ pull}

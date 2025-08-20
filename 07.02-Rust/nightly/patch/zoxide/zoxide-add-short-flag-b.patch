@@ -1,0 +1,115 @@
+diff --git a/contrib/completions/_zoxide b/contrib/completions/_zoxide
+index 97e654f..c343481 100644
+--- a/contrib/completions/_zoxide
++++ b/contrib/completions/_zoxide
+@@ -120,6 +120,7 @@ _arguments "${_arguments_options[@]}" : \
+ (query)
+ _arguments "${_arguments_options[@]}" : \
+ '--exclude=[Exclude the current directory]:path:_files -/' \
++'-b+[Only search within this directory]:path:_files -/' \
+ '--base-dir=[Only search within this directory]:path:_files -/' \
+ '-a[Show unavailable directories]' \
+ '--all[Show unavailable directories]' \
+diff --git a/contrib/completions/_zoxide.ps1 b/contrib/completions/_zoxide.ps1
+index bb47d3a..f153782 100644
+--- a/contrib/completions/_zoxide.ps1
++++ b/contrib/completions/_zoxide.ps1
+@@ -102,6 +102,7 @@ Register-ArgumentCompleter -Native -CommandName 'zoxide' -ScriptBlock {
+         }
+         'zoxide;query' {
+             [CompletionResult]::new('--exclude', '--exclude', [CompletionResultType]::ParameterName, 'Exclude the current directory')
++            [CompletionResult]::new('-b', '-b', [CompletionResultType]::ParameterName, 'Only search within this directory')
+             [CompletionResult]::new('--base-dir', '--base-dir', [CompletionResultType]::ParameterName, 'Only search within this directory')
+             [CompletionResult]::new('-a', '-a', [CompletionResultType]::ParameterName, 'Show unavailable directories')
+             [CompletionResult]::new('--all', '--all', [CompletionResultType]::ParameterName, 'Show unavailable directories')
+diff --git a/contrib/completions/zoxide.bash b/contrib/completions/zoxide.bash
+index 82b174e..f8799f6 100644
+--- a/contrib/completions/zoxide.bash
++++ b/contrib/completions/zoxide.bash
+@@ -199,7 +199,7 @@ _zoxide() {
+             return 0
+             ;;
+         zoxide__query)
+-            opts="-a -i -l -s -h -V --all --interactive --list --score --exclude --base-dir --help --version [KEYWORDS]..."
++            opts="-a -i -l -s -b -h -V --all --interactive --list --score --exclude --base-dir --help --version [KEYWORDS]..."
+             if [[ ${cur} == -* || ${COMP_CWORD} -eq 2 ]] ; then
+                 COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
+                 return 0
+@@ -219,6 +219,13 @@ _zoxide() {
+                     fi
+                     return 0
+                     ;;
++                -b)
++                    COMPREPLY=()
++                    if [[ "${BASH_VERSINFO[0]}" -ge 4 ]]; then
++                        compopt -o plusdirs
++                    fi
++                    return 0
++                    ;;
+                 *)
+                     COMPREPLY=()
+                     ;;
+diff --git a/contrib/completions/zoxide.elv b/contrib/completions/zoxide.elv
+index 93c57af..c9aded4 100644
+--- a/contrib/completions/zoxide.elv
++++ b/contrib/completions/zoxide.elv
+@@ -90,6 +90,7 @@ set edit:completion:arg-completer[zoxide] = {|@words|
+         }
+         &'zoxide;query'= {
+             cand --exclude 'Exclude the current directory'
++            cand -b 'Only search within this directory'
+             cand --base-dir 'Only search within this directory'
+             cand -a 'Show unavailable directories'
+             cand --all 'Show unavailable directories'
+diff --git a/contrib/completions/zoxide.fish b/contrib/completions/zoxide.fish
+index 3a0bfe7..53a5257 100644
+--- a/contrib/completions/zoxide.fish
++++ b/contrib/completions/zoxide.fish
+@@ -62,7 +62,7 @@ complete -c zoxide -n "__fish_zoxide_using_subcommand init" -l no-cmd -d 'Preven
+ complete -c zoxide -n "__fish_zoxide_using_subcommand init" -s h -l help -d 'Print help'
+ complete -c zoxide -n "__fish_zoxide_using_subcommand init" -s V -l version -d 'Print version'
+ complete -c zoxide -n "__fish_zoxide_using_subcommand query" -l exclude -d 'Exclude the current directory' -r -f -a "(__fish_complete_directories)"
+-complete -c zoxide -n "__fish_zoxide_using_subcommand query" -l base-dir -d 'Only search within this directory' -r -f -a "(__fish_complete_directories)"
++complete -c zoxide -n "__fish_zoxide_using_subcommand query" -s b -l base-dir -d 'Only search within this directory' -r -f -a "(__fish_complete_directories)"
+ complete -c zoxide -n "__fish_zoxide_using_subcommand query" -s a -l all -d 'Show unavailable directories'
+ complete -c zoxide -n "__fish_zoxide_using_subcommand query" -s i -l interactive -d 'Use interactive selection'
+ complete -c zoxide -n "__fish_zoxide_using_subcommand query" -s l -l list -d 'List all matching directories'
+diff --git a/contrib/completions/zoxide.nu b/contrib/completions/zoxide.nu
+index 642908e..4a0557b 100644
+--- a/contrib/completions/zoxide.nu
++++ b/contrib/completions/zoxide.nu
+@@ -82,7 +82,7 @@ module completions {
+     --list(-l)                # List all matching directories
+     --score(-s)               # Print score with results
+     --exclude: path           # Exclude the current directory
+-    --base-dir: path          # Only search within this directory
++    --base-dir(-b): path      # Only search within this directory
+     --help(-h)                # Print help
+     --version(-V)             # Print version
+   ]
+diff --git a/contrib/completions/zoxide.ts b/contrib/completions/zoxide.ts
+index 1e0d404..87a767a 100644
+--- a/contrib/completions/zoxide.ts
++++ b/contrib/completions/zoxide.ts
+@@ -215,7 +215,7 @@ const completion: Fig.Spec = {
+           },
+         },
+         {
+-          name: "--base-dir",
++          name: ["-b", "--base-dir"],
+           description: "Only search within this directory",
+           isRepeatable: true,
+           args: {
+diff --git a/src/cmd/cmd.rs b/src/cmd/cmd.rs
+index 7359786..e9e2662 100644
+--- a/src/cmd/cmd.rs
++++ b/src/cmd/cmd.rs
+@@ -188,7 +188,7 @@ pub struct Query {
+     pub exclude: Option<String>,
+ 
+     /// Only search within this directory
+-    #[clap(long, value_hint = ValueHint::DirPath, value_name = "path")]
++    #[clap(long, short, value_hint = ValueHint::DirPath, value_name = "path")]
+     pub base_dir: Option<String>,
+ }
+ 

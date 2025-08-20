@@ -13,6 +13,11 @@ _default:
 help:
     @just --choose
 
+alias roote :=root-edit
+[working-directory: '']
+root-edit:
+    just -e
+    
 alias f := find
 [script]
 find nest_level="3":
@@ -56,3 +61,19 @@ track_dir:
         New-Item $keepingDir -Force
         git add $keepingDir --force
     }
+
+patch_folder := "patch"
+alias crs := check-repo-status
+[no-cd,script]
+check-repo-status:
+    gci |%{if($_.Attributes -eq "Directory" -and $_.BaseName -ne "{{patch_folder}}") {
+        $_.BaseName && (git -C $_ st) | oh
+    }
+    else {"no need to check"}
+    }
+    
+alias mp := move-patch
+[no-cd,script]
+move-patch:
+    mv -Path *patch -Destination ( "../{{patch_folder}}/$(split-path $pwd -Leaf)/" | % { ni $_ -ItemType Directory ; $destination = $_; write-output $_ }) -Force
+    gci $destination | Out-Host

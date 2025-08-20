@@ -8,5 +8,7 @@ build
 .vs
 out
 bin
-01-C++/proj/MesonExample/meson.build
-01-C++/proj/MesonExample/mesonexample.cpp
+
+# INFO: since I patch lots of my personal software, have to start reignore things.
+!*patch
+

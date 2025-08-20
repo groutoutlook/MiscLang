@@ -1,0 +1,34 @@
+diff --git a/.gitignore b/.gitignore
+index c627000..b35d473 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+-*.prof
++*.prof
++fx.exe
+diff --git a/keymap.go b/keymap.go
+index 76bc27c..de90176 100644
+--- a/keymap.go
++++ b/keymap.go
+@@ -61,7 +61,7 @@ func init() {
+ 			key.WithHelp("pgup, b", "page up"),
+ 		),
+ 		HalfPageUp: key.NewBinding(
+-			key.WithKeys("u", "ctrl+u"),
++			key.WithKeys("u", "ctrl+u", "D"),
+ 			key.WithHelp("", "half page up"),
+ 		),
+ 		HalfPageDown: key.NewBinding(
+diff --git a/main.go b/main.go
+index 7ad5558..e70adeb 100644
+--- a/main.go
++++ b/main.go
+@@ -1574,7 +1574,7 @@ func (m *model) open() tea.Cmd {
+ 		strings.Split(lookup([]string{"FX_EDITOR", "EDITOR"}, "vim"), " "),
+ 		engine.FilePath,
+ 	)
+-	if command[0] == "vi" || command[0] == "vim" {
++	if command[0] == "vi" || command[0] == "vim" || command[0] == "hx" {
+ 		at, ok := m.cursorPointsTo()
+ 		if ok {
+ 			tail := command[1:]

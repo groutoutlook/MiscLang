@@ -21,7 +21,7 @@ alias b := build
 [no-cd]
 build *args:
     # go build . {{args}}
-    go build -ldflags="-s -w -X main.version=release" || echo "you may want to find your main.go" && fd main.go
+    go build -ldflags="-s -w -X main.version=release" || (echo "you may want to find your main.go" && fd main.go)
     
     
 alias fmt := format
@@ -39,6 +39,6 @@ alias t := test
 test *args=var_test: (format args)
     # also something directly test behaviour.
 
-[script]
+# [script("pwsh","-Command","$env:envvar='ENV HERE'")]
 script:
-    Write-Host "this is in powershell, without shebang syntax"
+    Write-Host "this is in powershell, without shebang syntax and the $env:envvar"
