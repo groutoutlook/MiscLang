@@ -71,9 +71,26 @@ check-repo-status:
     }
     else {"no need to check"}
     }
+
+alias cp := create-patch
+alias cpatch := create-patch
+[no-cd,script]
+create-patch:
+    # created based on the uncommit tho.
+    $final_name = "$(Get-Date -UFormat '%Y-%m-%d').patch"
+    git stk -m "Patch on $(Get-Date)"
+    git stash show -p > "./$final_name"
+    gci $final_name | oh
     
 alias mp := move-patch
 [no-cd,script]
 move-patch:
+    # TODO: You may want to create patch first as well...
     mv -Path *patch -Destination ( "../{{patch_folder}}/$(split-path $pwd -Leaf)/" | % { ni $_ -ItemType Directory ; $destination = $_; write-output $_ }) -Force
     gci $destination | Out-Host
+
+
+alias pu := pull-update
+[script,no-cd]
+pull-update:
+    gci -Directory | % {git -C $_ pull}

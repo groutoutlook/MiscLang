@@ -20,7 +20,6 @@ _default:
 alias b := build
 [no-cd]
 build *args:
-    # go build . {{args}}
     go build -ldflags="-s -w -X main.version=release" || (echo "you may want to find your main.go" && fd main.go)
     
     

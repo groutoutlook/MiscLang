@@ -12,9 +12,8 @@ _default:
     @just --list
 
 alias b := build
-[no-cd]
 build:
-    uv build . # probably.
+    # build task here
 
 alias r := run
 default_args := 'args here'
@@ -44,9 +43,3 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
-
-alias ins := install
-[no-cd]
-install:
-    uv tool install .
-    

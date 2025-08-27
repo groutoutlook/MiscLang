@@ -41,8 +41,3 @@ test *args=var_test: (format args)
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
-
-alias pu := pull-update
-[script,no-cd]
-pull-update:
-    gci -Directory | % {git -C $_ pull}

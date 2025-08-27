@@ -24,7 +24,10 @@
 - Rust
 - C#
 - Golang
-- C (name it as libc).
+- C (name it as libc)
+- Java
+- Zig
+
 ## 08 - Concatenative programming languages
 ## 09 - Concurrent languages
 ## 10 - Constraint programming languages
