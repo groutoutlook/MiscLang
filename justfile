@@ -98,7 +98,3 @@ pull-update:
     $depthPattern = "*"+"/*"*[int]($max_pull_depth - $depth) 
     Write-Host "Currently $depthPattern" -ForegroundColor Green
     gci $depthPattern -Directory | % {git -C $_ pull}
-
-[script,no-cd]
-get-location:
-    pwd

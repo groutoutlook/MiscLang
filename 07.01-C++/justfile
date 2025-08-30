@@ -1,13 +1,18 @@
 shebang := if os() == 'windows' { 'pwsh.exe' } else { '/usr/bin/env pwsh' }
 set shell := ["pwsh", "-c"]
 set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
-set dotenv-load := true
-# set dotenv-filename	:= ".env"
+set script-interpreter := ["pwsh.exe", "-NoProfile","-NoLogo", "-Command"]
+set dotenv-load
+set unstable
+set fallback
+set dotenv-filename	:= ".env"
 # set dotenv-required := true
-# INFO: if you want to edit the justfile use js -e.
+export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
+_default:
+    @just --list
 
 help:
-    @just --list -f "{{home_directory()}}/justfile"
+    @just --choose
 
 default_arg := 'TODO:'
 alias td := todo
