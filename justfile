@@ -1,7 +1,7 @@
 shebang := if os() == 'windows' { 'pwsh.exe' } else { '/usr/bin/env pwsh' }
 set shell := ["pwsh", "-c"]
 set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
-set script-interpreter := ["pwsh.exe", "-NoLogo", "-Command"]
+set script-interpreter := ["pwsh.exe", "-NoProfile","-NoLogo", "-Command"]
 set dotenv-load
 set unstable
 set dotenv-filename	:= ".env"
@@ -93,4 +93,12 @@ move-patch:
 alias pu := pull-update
 [script,no-cd]
 pull-update:
-    gci -Directory | % {git -C $_ pull}
+    $depth = (pwd) -split '\\' | Tee -var split -ob 99 | % { $i = 0 }{ if ($_ -match "misclang") { $split.Count - $i;} else { $i++ } }
+    $max_pull_depth = 3 
+    $depthPattern = "*"+"/*"*[int]($max_pull_depth - $depth) 
+    Write-Host "Currently $depthPattern" -ForegroundColor Green
+    gci $depthPattern -Directory | % {git -C $_ pull}
+
+[script,no-cd]
+get-location:
+    pwd
