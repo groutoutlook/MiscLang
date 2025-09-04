@@ -1,12 +1,16 @@
 - 07.01-C++\nightly\AutoHotkey
 
-- 07.01-C++\nightly\llvm-project
-
 - 07.01-C++\nightly\spooky-view
 
 - 07.01-C++\nightly\znc
 
+- 07.01-C++\proj\CppQuickPrototype
+
+- 07.01-C++\proj\CppScript
+
 - 07.01-C++\proj\MesonExample
+
+- 07.01-C++\proj\pnm
 
 - 07.01-C++\proj\transparentWindow
 
@@ -34,7 +38,7 @@
 
 - 07.01-C++\repo\MiniUtils
 
-- 07.01-C++\repo\notcurses-msvc
+- 07.01-C++\repo\pnm
 
 - 07.01-C++\repo\sr_gui
 
@@ -48,17 +52,31 @@
 
 - 07.02-Rust\book\First-Ever-mdBook
 
+- 07.02-Rust\nightly\comrak
+
 - 07.02-Rust\nightly\coreutils
+
+- 07.02-Rust\nightly\diffutils
 
 - 07.02-Rust\nightly\domain-check
 
-- 07.02-Rust\nightly\edit
+- 07.02-Rust\nightly\dust
 
-- 07.02-Rust\nightly\fastside
+- 07.02-Rust\nightly\EasyTier
 
 - 07.02-Rust\nightly\fend
 
-- 07.02-Rust\nightly\flamegraph
+- 07.02-Rust\nightly\fselect
+
+- 07.02-Rust\nightly\geschichte
+
+- 07.02-Rust\nightly\git-interactive-rebase-tool
+
+- 07.02-Rust\nightly\gitu
+
+- 07.02-Rust\nightly\grex
+
+- 07.02-Rust\nightly\heh
 
 - 07.02-Rust\nightly\helix
 
@@ -66,33 +84,63 @@
 
 - 07.02-Rust\nightly\igrep
 
+- 07.02-Rust\nightly\iroh
+
+- 07.02-Rust\nightly\iroh-ssh
+
+- 07.02-Rust\nightly\jaq
+
+- 07.02-Rust\nightly\kakasi
+
 - 07.02-Rust\nightly\kanata
 
-- 07.02-Rust\nightly\kget
+- 07.02-Rust\nightly\lstr
 
 - 07.02-Rust\nightly\mergiraf
 
 - 07.02-Rust\nightly\microbin
 
+- 07.02-Rust\nightly\miniature
+
+- 07.02-Rust\nightly\mq
+
+- 07.02-Rust\nightly\patch
+
 - 07.02-Rust\nightly\posh-fzf
+
+- 07.02-Rust\nightly\procps
 
 - 07.02-Rust\nightly\ripgrep
 
-- 07.02-Rust\nightly\rmuxinator
-
-- 07.02-Rust\nightly\rustypaste
-
 - 07.02-Rust\nightly\scooter
+
+- 07.02-Rust\nightly\sendme
 
 - 07.02-Rust\nightly\serie
 
-- 07.02-Rust\nightly\sig
-
 - 07.02-Rust\nightly\smartdns-rs
+
+- 07.02-Rust\nightly\socktop
+
+- 07.02-Rust\nightly\taplo
+
+- 07.02-Rust\nightly\television
+
+- 07.02-Rust\nightly\tiller
+
+- 07.02-Rust\nightly\tokei
+
+- 07.02-Rust\nightly\topiary
+
+- 07.02-Rust\nightly\typos
+
+- 07.02-Rust\nightly\typst
 
 - 07.02-Rust\nightly\vsp-router
 
 - 07.02-Rust\nightly\websocat
+
+- 07.02-Rust\nightly\yazi
 
 - 07.02-Rust\nightly\zoxide
 
@@ -114,13 +162,15 @@
 
 - 07.03-C#\nightly\File-Tunnel
 
-- 07.03-C#\nightly\mRemoteNG
-
 - 07.03-C#\nightly\PipeViewer
+
+- 07.03-C#\nightly\QuickJump2022
 
 - 07.03-C#\nightly\ssh-copy-id-net
 
 - 07.03-C#\nightly\WinJump
+
+- 07.03-C#\proj\advanced-coor-meddling
 
 - 07.03-C#\proj\csharp-script
 
@@ -134,23 +184,43 @@
 
 - 07.03-C#\repo\vs-NavigateTabGroups
 
+- 07.04-Golang\nightly\act
+
 - 07.04-Golang\nightly\cronitor-cli
+
+- 07.04-Golang\nightly\crush
+
+- 07.04-Golang\nightly\d2
 
 - 07.04-Golang\nightly\dblab
 
 - 07.04-Golang\nightly\fx
 
+- 07.04-Golang\nightly\gdu
+
+- 07.04-Golang\nightly\lazygit
+
 - 07.04-Golang\nightly\leetgo
 
 - 07.04-Golang\nightly\neko
 
+- 07.04-Golang\nightly\noxdir
+
 - 07.04-Golang\nightly\ov
 
+- 07.04-Golang\nightly\patch
+
 - 07.04-Golang\nightly\pprof
+
+- 07.04-Golang\nightly\yq
+
+- 07.04-Golang\repo\bcat
 
 - 07.04-Golang\repo\skate
 
 - 07.04-Golang\repo\wslpath
+
+- 07.05-libc\nightly\nob.h
 
 - 07.05-libc\repo\c-starter
 
@@ -172,7 +242,9 @@
 
 - 07.05-libc\repo\rfxgen
 
-- 15.01-Nix\repo\dotfiles
+- 07.06-Java\nightly\kanada
+
+- 07.07-Zig\nightly\pixi
 
 - 19.01-Lua\proj\emacsinsert.nvim
 
@@ -186,21 +258,23 @@
 
 - 24.01-PowerShell\proj\gh_profile
 
-- 24.01-PowerShell\proj\misc_scripts
+- 24.01-PowerShell\proj\keyframe_generating
 
-- 24.01-PowerShell\proj\parse_keybinding
+- 24.01-PowerShell\proj\misc_scripts
 
 - 24.01-PowerShell\proj\powershell_HTML
 
 - 24.01-PowerShell\proj\powershellConfig
 
+- 24.01-PowerShell\proj\PSD1.Config.Utils
+
 - 24.01-PowerShell\proj\PSRemote-Utils
+
+- 24.01-PowerShell\proj\pwsh-star-applying-scripts
 
 - 24.01-PowerShell\proj\pwsh-star-coor-related
 
 - 24.01-PowerShell\proj\registry-utils
-
-- 24.01-PowerShell\proj\Simple-Powershell-WebServer
 
 - 24.01-PowerShell\repo\amt-sdk-20-0-0-1
 
@@ -222,11 +296,15 @@
 
 - 24.02-Nushell\proj\nushellConfig
 
-- 24.02-Nushell\repo\nu_plugin_audio_hook
-
 - 24.03-Bash\repo\git-extras
 
 - 25.01-Python\nightly\BetterWX
+
+- 25.01-Python\nightly\jrnl
+
+- 25.01-Python\nightly\korean-romanizer
+
+- 25.01-Python\nightly\markitdown
 
 - 25.01-Python\nightly\ninjatracing
 
@@ -238,21 +316,17 @@
 
 - 25.02-TypeScript\proj\startProj
 
-- 25.02-TypeScript\repo\DuetWebControl
-
 - 25.02-TypeScript\repo\serial-terminal
 
-- 25.03-JavaScript\repo\keymap
+- 25.03-JavaScript\nightly\node-bcat
 
-- 25.03-JavaScript\repo\vscode-keyboard-sticker
+- 25.03-JavaScript\repo\find-lite
 
 - 33.01-F#\proj\MyFSharpApp
 
 - 33.01-F#\repo\pscomplete
 
 - 45.01-Berry\repo\berry
-
-- 45.02-autohotkey-ahk\proj\ahkWindowsSwitcher
 
 - 45.02-autohotkey-ahk\proj\AutoHotInterception
 
@@ -287,4 +361,8 @@
 - 60.01-OpenScad\repo\tt-demo-pcb
 
 - 60.02-VSScript\proj\VSScriptSample
+
+- 99.01-CSS\nightly\personalCSS
+
+- 99.01-CSS\proj\personalCSS
 

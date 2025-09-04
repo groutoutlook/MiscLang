@@ -3,6 +3,7 @@
 - Based on [List of programming languages by type - Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages_by_type)
 	- Update 2025-05-16.
 	- also check out [List of markup languages - Wikipedia](https://en.wikipedia.org/wiki/List_of_markup_languages)
+		- [List of document markup languages - Wikipedia](https://en.wikipedia.org/wiki/List_of_document_markup_languages)
 		- the like of YAML, TOML, JSON, INI, etc... is serialization file formats.
 			- Not really a language to say. Since languages contains instruction, those just has data
 	- My order is for prefix.
@@ -95,3 +96,8 @@
 ## 55 - XML-based languages
 ## 60 - Other DSL
 	- OpenScad - Declarative 3D CAD DSL.
+
+# Markup Config and Data Language
+# 01 - Markup/Styling Language.
+- CSS : 99.01
+	- Which contain my stylesheet for something.
