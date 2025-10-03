@@ -97,4 +97,12 @@ pull-update:
     $max_pull_depth = 3 
     $depthPattern = "*"+"/*"*[int]($max_pull_depth - $depth) 
     Write-Host "Currently $depthPattern" -ForegroundColor Green
-    gci $depthPattern -Directory | % {git -C $_ pull}
+    gci $depthPattern -Directory | % {Write-Host $_.BaseName -ForeGroundColor Cyan; git -C $_ pull}
+
+
+alias rba := rebuild-all
+[script, no-cd]
+rebuild-all:
+    gci | where { (Get-Date) - $_.LastWriteTime -lt (New-TimeSpan -Days 1) }
+        | sort LastWriteTime
+        | %{write-host $_.Name -Fore Blue;cd $_; just b; cd ..}

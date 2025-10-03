@@ -24,9 +24,10 @@ build-nightly:
     cargo +nightly build --release
 
 alias fmt := format
+[no-cd]
 format args="nothing":
-    # format something as `biome format --write`
-
+    cargo fmt -- --check
+    cargo clippy -- -D warnings
 # INFO: basic `run` recipe.
 alias r := run
 default_args := 'args here'
