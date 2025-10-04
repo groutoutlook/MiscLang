@@ -9,20 +9,14 @@ set fallback
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 _default:
-    @just --list --unsorted
-    
-default_sln := "(rvpa *.sln)"
-alias b := build
-[group('dev')]
-[no-cd]
-build solution_name=default_sln:
-    msbuild {{solution_name}} /property:Configuration=Release /p:Platform=x64
-    msbuild {{solution_name}} /property:Configuration=Release 
+    @just --list
 
+alias b := build
+build:
+    # build task here
 
 alias r := run
 default_args := 'args here'
-[group('debug')]
 run args=default_args:
     @Write-Host {{default_args}} -ForegroundColor Red
 
@@ -31,7 +25,6 @@ format:
     # format plesase. could also run rfmt
 
 alias t := test
-[group('dev')]
 test:
     # test.
 
@@ -50,10 +43,3 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
-
-
-[group('dev')]
-wt:
-    #!{{ shebang }}
-    wt -f new-tab -p "Developer PowerShell for VS 2022" -d  {{ invocation_directory() }} --tabColor '#FFFFFF'
-

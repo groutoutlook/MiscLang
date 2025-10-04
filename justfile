@@ -13,11 +13,17 @@ _default:
 help:
     @just --choose
 
-alias roote :=root-edit
+alias roote := root-edit
 [working-directory: '']
 root-edit:
     just -e
-    
+
+alias rol := root-help
+alias rooth := root-help
+[working-directory: '']
+root-help:
+    just --list
+     
 alias f := find
 [script]
 find nest_level="3":
