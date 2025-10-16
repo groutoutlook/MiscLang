@@ -1,20 +1,24 @@
 shebang := if os() == 'windows' { 'pwsh.exe' } else { '/usr/bin/env pwsh' }
-set shell := ["pwsh", "-c"]
-set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
+set shell := ["nu", "-c"]
+set windows-shell := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
 set dotenv-load := true
-set script-interpreter := ["pwsh.exe", "-NoProfile","-NoLogo", "-Command"]
+set script-interpreter := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
 set dotenv-filename	:= ".env"
 set unstable
 set fallback
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 _default:
-    @just --list
-
+    @just --list --unsorted
+    
 alias b := build
-build:
-    # build task here
-    # 
+default_sln := "(rvpa *.sln)"
+[group('dev')]
+[no-cd]
+build solution_name=default_sln:
+    msbuild {{solution_name}} /property:Configuration=Release /p:Platform=x64
+    msbuild {{solution_name}} /property:Configuration=Release 
+
 alias r := run
 default_args := '.'
 [no-cd]
@@ -26,6 +30,7 @@ format:
     # format plesase. could also run rfmt
 
 alias t := test
+[group('dev')]
 test:
     # test.
 

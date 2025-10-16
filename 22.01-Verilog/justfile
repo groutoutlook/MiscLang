@@ -11,13 +11,10 @@ export JUST_ENV := "just_env" # WARN: this is also a method to export env var.
 _default:
     @just --list --unsorted
     
-default_sln := "(rvpa *.sln)"
 alias b := build
 [group('dev')]
-[no-cd]
-build solution_name=default_sln:
-    msbuild {{solution_name}} /property:Configuration=Release /p:Platform=x64
-    msbuild {{solution_name}} /property:Configuration=Release 
+build:
+    # build task here
 
 alias r := run
 default_args := 'args here'

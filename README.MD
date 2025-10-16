@@ -47,6 +47,7 @@
 ## 21 - Functional languages
 - Dart
 ## 22 - Hardware description languages
+- Verilog
 ## 23 - Imperative languages
 ## 24 - Interactive mode languages
 - PowerShell
