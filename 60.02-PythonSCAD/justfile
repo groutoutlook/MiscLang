@@ -23,8 +23,8 @@ run args=default_args:
     @Write-Host {{default_args}} -ForegroundColor Red
 
 alias fmt := format
-format args="nothing":
-    Import-Module ./Formatter.psm1 -Force && gci *.psm1 | % { Format-PowerShellFile $_ }
+format:
+    # format plesase. could also run rfmt
 
 alias t := test
 [group('dev')]
