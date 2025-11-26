@@ -16,8 +16,9 @@ default_sln := "(rvpa *.sln)"
 [group('dev')]
 [no-cd]
 build solution_name=default_sln:
-    msbuild {{solution_name}} /property:Configuration=Release /p:Platform=x64
-    msbuild {{solution_name}} /property:Configuration=Release 
+    dotnet publish -c Release
+    # msbuild {{solution_name}} /property:Configuration=Release /p:Platform=x64
+    # msbuild {{solution_name}} /property:Configuration=Release 
 
 alias r := run
 default_args := '.'

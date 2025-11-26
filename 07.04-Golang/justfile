@@ -20,7 +20,7 @@ _default:
 alias b := build
 [no-cd]
 build *args:
-    go build -ldflags="-s -w -X main.version=release" || (Write-Host "you may want to find your main.go" -ForeGroundColor Yellow && fd main.go)
+    go build -ldflags="-s -w -X main.Version=$(git describe --tags --abbrev=0 --always) -X main.Revision=$(git rev-parse --verify --short HEAD)" || (Write-Host "you may want to find your main.go" -Fore Yellow && fd main.go)
     
     
 alias fmt := format

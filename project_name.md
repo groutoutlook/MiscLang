@@ -4,6 +4,8 @@
 
 - 07.01-C++\nightly\MouseKeyRecorder
 
+- 07.01-C++\nightly\Serial-Studio
+
 - 07.01-C++\nightly\spooky-view
 
 - 07.01-C++\nightly\uvConvertor
@@ -13,6 +15,8 @@
 - 07.01-C++\nightly\znc
 
 - 07.01-C++\proj\cpp-playground
+
+- 07.01-C++\proj\cpp-polyfill
 
 - 07.01-C++\proj\CppScript
 
@@ -82,6 +86,8 @@
 
 - 07.02-Rust\nightly\geschichte
 
+- 07.02-Rust\nightly\gitu
+
 - 07.02-Rust\nightly\gitui
 
 - 07.02-Rust\nightly\grex
@@ -130,8 +136,6 @@
 
 - 07.02-Rust\nightly\smartdns-rs
 
-- 07.02-Rust\nightly\socktop
-
 - 07.02-Rust\nightly\starship-jj
 
 - 07.02-Rust\nightly\taplo
@@ -150,6 +154,8 @@
 
 - 07.02-Rust\proj\rust-playground
 
+- 07.02-Rust\proj\vid-pid-rs
+
 - 07.02-Rust\rarely\comrak
 
 - 07.02-Rust\rarely\coreutils
@@ -167,8 +173,6 @@
 - 07.02-Rust\rarely\mqt
 
 - 07.02-Rust\rarely\natvis4qt
-
-- 07.02-Rust\rarely\nuhxboard
 
 - 07.02-Rust\rarely\procps
 
@@ -201,6 +205,8 @@
 - 07.02-Rust\repo\wsl-dirutils
 
 - 07.03-C#\nightly\desktop-switcher
+
+- 07.03-C#\nightly\echoargs
 
 - 07.03-C#\nightly\File-Tunnel
 
@@ -238,6 +244,8 @@
 
 - 07.04-Golang\nightly\gdu
 
+- 07.04-Golang\nightly\gitee_cli
+
 - 07.04-Golang\nightly\lazygit
 
 - 07.04-Golang\nightly\neko
@@ -273,6 +281,8 @@
 - 07.05-libc\repo\Cello
 
 - 07.05-libc\repo\clay
+
+- 07.05-libc\repo\CMSIS_6
 
 - 07.05-libc\repo\file-windows
 
@@ -316,6 +326,8 @@
 
 - 24.01-PowerShell\proj\powershell_HTML
 
+- 24.01-PowerShell\proj\powershell-clipboard
+
 - 24.01-PowerShell\proj\powershellConfig
 
 - 24.01-PowerShell\proj\PSD1.Config.Utils
@@ -356,6 +368,10 @@
 
 - 25.01-Python\nightly\BetterWX
 
+- 25.01-Python\nightly\dist
+
+- 25.01-Python\nightly\ejs
+
 - 25.01-Python\nightly\freecad-render-production
 
 - 25.01-Python\nightly\jc
@@ -369,10 +385,6 @@
 - 25.01-Python\nightly\MCU-Flash-Tools
 
 - 25.01-Python\nightly\meson
-
-- 25.01-Python\nightly\ninjatracing
-
-- 25.01-Python\nightly\pyOCD
 
 - 25.01-Python\nightly\visidata
 
