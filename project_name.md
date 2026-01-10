@@ -4,6 +4,8 @@
 
 - 07.01-C++\nightly\MouseKeyRecorder
 
+- 07.01-C++\nightly\Serial-Studio
+
 - 07.01-C++\nightly\spooky-view
 
 - 07.01-C++\nightly\uvConvertor
@@ -13,6 +15,8 @@
 - 07.01-C++\nightly\znc
 
 - 07.01-C++\proj\cpp-playground
+
+- 07.01-C++\proj\cpp-polyfill
 
 - 07.01-C++\proj\CppScript
 
@@ -68,11 +72,11 @@
 
 - 07.02-Rust\book\First-Ever-mdBook
 
+- 07.02-Rust\nightly\biff
+
 - 07.02-Rust\nightly\choose
 
 - 07.02-Rust\nightly\dust
-
-- 07.02-Rust\nightly\edit
 
 - 07.02-Rust\nightly\fend
 
@@ -100,8 +104,6 @@
 
 - 07.02-Rust\nightly\lstr
 
-- 07.02-Rust\nightly\mdserve
-
 - 07.02-Rust\nightly\mergiraf
 
 - 07.02-Rust\nightly\microbin
@@ -114,23 +116,13 @@
 
 - 07.02-Rust\nightly\posh-fzf
 
-- 07.02-Rust\nightly\prmt
-
 - 07.02-Rust\nightly\probe-rs
-
-- 07.02-Rust\nightly\rimage
 
 - 07.02-Rust\nightly\ripgrep
 
 - 07.02-Rust\nightly\scooter
 
 - 07.02-Rust\nightly\sendme
-
-- 07.02-Rust\nightly\serie
-
-- 07.02-Rust\nightly\smartdns-rs
-
-- 07.02-Rust\nightly\socktop
 
 - 07.02-Rust\nightly\starship-jj
 
@@ -140,8 +132,6 @@
 
 - 07.02-Rust\nightly\tiller
 
-- 07.02-Rust\nightly\vsp-router
-
 - 07.02-Rust\nightly\yazi
 
 - 07.02-Rust\nightly\zoxide
@@ -149,6 +139,10 @@
 - 07.02-Rust\proj\macors
 
 - 07.02-Rust\proj\rust-playground
+
+- 07.02-Rust\proj\vid-pid-rs
+
+- 07.02-Rust\rarely\carl
 
 - 07.02-Rust\rarely\comrak
 
@@ -158,9 +152,21 @@
 
 - 07.02-Rust\rarely\domain-check
 
+- 07.02-Rust\rarely\effy
+
+- 07.02-Rust\rarely\fresh
+
+- 07.02-Rust\rarely\gitu
+
 - 07.02-Rust\rarely\gping
 
+- 07.02-Rust\rarely\lazyjj
+
+- 07.02-Rust\rarely\md-tui
+
 - 07.02-Rust\rarely\mdfried
+
+- 07.02-Rust\rarely\mdserve
 
 - 07.02-Rust\rarely\mq
 
@@ -168,13 +174,17 @@
 
 - 07.02-Rust\rarely\natvis4qt
 
-- 07.02-Rust\rarely\nuhxboard
-
 - 07.02-Rust\rarely\procps
 
 - 07.02-Rust\rarely\ripgrep-all
 
 - 07.02-Rust\rarely\rv
+
+- 07.02-Rust\rarely\sd
+
+- 07.02-Rust\rarely\serie
+
+- 07.02-Rust\rarely\smartdns-rs
 
 - 07.02-Rust\rarely\tokei
 
@@ -183,6 +193,8 @@
 - 07.02-Rust\rarely\typos
 
 - 07.02-Rust\rarely\typst
+
+- 07.02-Rust\rarely\vsp-router
 
 - 07.02-Rust\rarely\websocat
 
@@ -201,6 +213,8 @@
 - 07.02-Rust\repo\wsl-dirutils
 
 - 07.03-C#\nightly\desktop-switcher
+
+- 07.03-C#\nightly\echoargs
 
 - 07.03-C#\nightly\File-Tunnel
 
@@ -228,6 +242,8 @@
 
 - 07.04-Golang\nightly\act
 
+- 07.04-Golang\nightly\croc
+
 - 07.04-Golang\nightly\cronitor-cli
 
 - 07.04-Golang\nightly\d2
@@ -237,6 +253,8 @@
 - 07.04-Golang\nightly\fx
 
 - 07.04-Golang\nightly\gdu
+
+- 07.04-Golang\nightly\gitee_cli
 
 - 07.04-Golang\nightly\lazygit
 
@@ -273,6 +291,8 @@
 - 07.05-libc\repo\Cello
 
 - 07.05-libc\repo\clay
+
+- 07.05-libc\repo\CMSIS_6
 
 - 07.05-libc\repo\file-windows
 
@@ -316,6 +336,8 @@
 
 - 24.01-PowerShell\proj\powershell_HTML
 
+- 24.01-PowerShell\proj\powershell-clipboard
+
 - 24.01-PowerShell\proj\powershellConfig
 
 - 24.01-PowerShell\proj\PSD1.Config.Utils
@@ -356,6 +378,10 @@
 
 - 25.01-Python\nightly\BetterWX
 
+- 25.01-Python\nightly\dist
+
+- 25.01-Python\nightly\ejs
+
 - 25.01-Python\nightly\freecad-render-production
 
 - 25.01-Python\nightly\jc
@@ -370,10 +396,6 @@
 
 - 25.01-Python\nightly\meson
 
-- 25.01-Python\nightly\ninjatracing
-
-- 25.01-Python\nightly\pyOCD
-
 - 25.01-Python\nightly\visidata
 
 - 25.01-Python\nightly\windows-curses
@@ -385,6 +407,8 @@
 - 25.01-Python\proj\python-playground
 
 - 25.01-Python\rarely\copyparty
+
+- 25.01-Python\rarely\VideOCR
 
 - 25.02-TypeScript\nightly\mpls-vscode-client
 
@@ -407,6 +431,8 @@
 - 45.01-Berry\repo\berry
 
 - 45.02-autohotkey-ahk\proj\AutoHotInterception
+
+- 45.02-autohotkey-ahk\proj\AutoScroll
 
 - 45.02-autohotkey-ahk\proj\MouseKeysPlusPlus
 

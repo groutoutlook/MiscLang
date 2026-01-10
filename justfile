@@ -90,8 +90,7 @@ create-patch:
     
 alias mp := move-patch
 [no-cd,script]
-move-patch:
-    # TODO: You may want to create patch first as well...
+move-patch: create-patch
     mv -Path *patch -Destination ( "../{{patch_folder}}/$(split-path $pwd -Leaf)/" | % { ni $_ -ItemType Directory ; $destination = $_; write-output $_ }) -Force
     gci $destination | Out-Host
 

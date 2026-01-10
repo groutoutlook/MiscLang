@@ -1,0 +1,25 @@
+diff --git a/justfile b/justfile
+index cfd9400..ccd8294 100755
+--- a/justfile
++++ b/justfile
+@@ -1,6 +1,8 @@
+ #!/usr/bin/env -S just --justfile
+ # ^ A shebang isn't required, but allows a justfile to be executed
+ #   like a script, with `./justfile test`, for example.
++set unstable
++set fallback
+ 
+ alias t := test
+ 
+@@ -34,9 +36,10 @@ run:
+ filter PATTERN:
+   cargo test {{PATTERN}}
+ 
++alias b:= build
+ [group: 'misc']
+ build:
+-  cargo build
++  cargo build --release
+ 
+ [group: 'misc']
+ fmt:
