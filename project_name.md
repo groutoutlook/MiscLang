@@ -2,17 +2,17 @@
 
 - 07.01-C++\nightly\Bear
 
+- 07.01-C++\nightly\build
+
 - 07.01-C++\nightly\MouseKeyRecorder
 
 - 07.01-C++\nightly\Serial-Studio
-
-- 07.01-C++\nightly\spooky-view
 
 - 07.01-C++\nightly\uvConvertor
 
 - 07.01-C++\nightly\WinUSB_DMA_MJPEG_Camera
 
-- 07.01-C++\nightly\znc
+- 07.01-C++\nightly\x-tools
 
 - 07.01-C++\proj\cpp-playground
 
@@ -29,6 +29,8 @@
 - 07.01-C++\proj\Windows-driver-samples
 
 - 07.01-C++\rarely\kicad
+
+- 07.01-C++\rarely\spooky-view
 
 - 07.01-C++\repo\AM_MIDI2.0Lib
 
@@ -154,6 +156,8 @@
 
 - 07.02-Rust\rarely\effy
 
+- 07.02-Rust\rarely\Ferrite
+
 - 07.02-Rust\rarely\fresh
 
 - 07.02-Rust\rarely\gitu
@@ -218,8 +222,6 @@
 
 - 07.03-C#\nightly\File-Tunnel
 
-- 07.03-C#\nightly\ImageGlass
-
 - 07.03-C#\nightly\PipeViewer
 
 - 07.03-C#\nightly\ssh-copy-id-net
@@ -236,9 +238,9 @@
 
 - 07.03-C#\repo\minimalVS
 
-- 07.03-C#\repo\Transparency
+- 07.03-C#\repo\TabGroupJump
 
-- 07.03-C#\repo\vs-NavigateTabGroups
+- 07.03-C#\repo\Transparency
 
 - 07.04-Golang\nightly\act
 
