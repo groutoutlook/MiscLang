@@ -10,7 +10,23 @@ set fallback
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 _default:
     @just --list --unsorted
+
+alias make := cmake-invoking
+[group('dev'), no-cd]
+cmake-invoking:
+    md build && cd build && cmake (rvpa ..)
     
+alias ei:= edit-in-ide
+[group('dev'), no-cd, script]
+edit-in-ide:
+    $defaultPath =  (rvpa ./*sln*) ?? (rvpa ./build/*sln*)
+    if($defaultPath) {
+        echo "$defaultPath is the main project files"
+        devenv $defaultPath
+    } else {
+        echo 'nothing built'
+    }
+   
 default_sln := "(rvpa *.sln)"
 alias b := build
 [group('dev')]
@@ -55,5 +71,5 @@ script:
 [group('dev')]
 wt:
     #!{{ shebang }}
-    wt -f new-tab -p "Developer PowerShell for VS 2022" -d  {{ invocation_directory() }} --tabColor '#FFFFFF'
+    wt -f new-tab -p "Developer Command Prompt for VS 18" -d  {{ invocation_directory() }} --tabColor '#FFFFFF'
 

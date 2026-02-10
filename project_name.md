@@ -2,17 +2,17 @@
 
 - 07.01-C++\nightly\Bear
 
+- 07.01-C++\nightly\build
+
 - 07.01-C++\nightly\MouseKeyRecorder
 
 - 07.01-C++\nightly\Serial-Studio
-
-- 07.01-C++\nightly\spooky-view
 
 - 07.01-C++\nightly\uvConvertor
 
 - 07.01-C++\nightly\WinUSB_DMA_MJPEG_Camera
 
-- 07.01-C++\nightly\znc
+- 07.01-C++\nightly\x-tools
 
 - 07.01-C++\proj\cpp-playground
 
@@ -26,9 +26,13 @@
 
 - 07.01-C++\proj\transparentWindow
 
+- 07.01-C++\proj\vulkan-cpp-primal
+
 - 07.01-C++\proj\Windows-driver-samples
 
 - 07.01-C++\rarely\kicad
+
+- 07.01-C++\rarely\spooky-view
 
 - 07.01-C++\repo\AM_MIDI2.0Lib
 
@@ -76,6 +80,8 @@
 
 - 07.02-Rust\nightly\choose
 
+- 07.02-Rust\nightly\doxx
+
 - 07.02-Rust\nightly\dust
 
 - 07.02-Rust\nightly\fend
@@ -110,6 +116,8 @@
 
 - 07.02-Rust\nightly\miniature
 
+- 07.02-Rust\nightly\ouch
+
 - 07.02-Rust\nightly\pastel
 
 - 07.02-Rust\nightly\patch
@@ -126,11 +134,15 @@
 
 - 07.02-Rust\nightly\starship-jj
 
+- 07.02-Rust\nightly\t
+
 - 07.02-Rust\nightly\taplo
 
 - 07.02-Rust\nightly\television
 
 - 07.02-Rust\nightly\tiller
+
+- 07.02-Rust\nightly\xleak
 
 - 07.02-Rust\nightly\yazi
 
@@ -141,6 +153,8 @@
 - 07.02-Rust\proj\rust-playground
 
 - 07.02-Rust\proj\vid-pid-rs
+
+- 07.02-Rust\proj\xleak
 
 - 07.02-Rust\rarely\carl
 
@@ -154,11 +168,21 @@
 
 - 07.02-Rust\rarely\effy
 
+- 07.02-Rust\rarely\Ferrite
+
 - 07.02-Rust\rarely\fresh
 
 - 07.02-Rust\rarely\gitu
 
 - 07.02-Rust\rarely\gping
+
+- 07.02-Rust\rarely\icann-rdap
+
+- 07.02-Rust\rarely\icy_sixel
+
+- 07.02-Rust\rarely\iscsI-client-rs
+
+- 07.02-Rust\rarely\keifu
 
 - 07.02-Rust\rarely\lazyjj
 
@@ -178,6 +202,8 @@
 
 - 07.02-Rust\rarely\ripgrep-all
 
+- 07.02-Rust\rarely\rsv
+
 - 07.02-Rust\rarely\rv
 
 - 07.02-Rust\rarely\sd
@@ -185,6 +211,10 @@
 - 07.02-Rust\rarely\serie
 
 - 07.02-Rust\rarely\smartdns-rs
+
+- 07.02-Rust\rarely\suppaftp
+
+- 07.02-Rust\rarely\tabiew
 
 - 07.02-Rust\rarely\tokei
 
@@ -199,6 +229,8 @@
 - 07.02-Rust\rarely\websocat
 
 - 07.02-Rust\rarely\xh
+
+- 07.02-Rust\repo\calamine
 
 - 07.02-Rust\repo\clock-rs
 
@@ -218,8 +250,6 @@
 
 - 07.03-C#\nightly\File-Tunnel
 
-- 07.03-C#\nightly\ImageGlass
-
 - 07.03-C#\nightly\PipeViewer
 
 - 07.03-C#\nightly\ssh-copy-id-net
@@ -236,9 +266,9 @@
 
 - 07.03-C#\repo\minimalVS
 
-- 07.03-C#\repo\Transparency
+- 07.03-C#\repo\TabGroupJump
 
-- 07.03-C#\repo\vs-NavigateTabGroups
+- 07.03-C#\repo\Transparency
 
 - 07.04-Golang\nightly\act
 
@@ -248,17 +278,15 @@
 
 - 07.04-Golang\nightly\d2
 
-- 07.04-Golang\nightly\dblab
-
 - 07.04-Golang\nightly\fx
 
 - 07.04-Golang\nightly\gdu
 
 - 07.04-Golang\nightly\gitee_cli
 
-- 07.04-Golang\nightly\lazygit
+- 07.04-Golang\nightly\klog
 
-- 07.04-Golang\nightly\neko
+- 07.04-Golang\nightly\lazygit
 
 - 07.04-Golang\nightly\noxdir
 
@@ -270,7 +298,11 @@
 
 - 07.04-Golang\nightly\uni
 
-- 07.04-Golang\nightly\yq
+- 07.04-Golang\rarely\dblab
+
+- 07.04-Golang\rarely\neko
+
+- 07.04-Golang\rarely\zipserve
 
 - 07.04-Golang\repo\bcat
 
