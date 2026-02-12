@@ -204,6 +204,8 @@
 
 - 07.02-Rust\rarely\rsv
 
+- 07.02-Rust\rarely\rupnpc
+
 - 07.02-Rust\rarely\rv
 
 - 07.02-Rust\rarely\sd
