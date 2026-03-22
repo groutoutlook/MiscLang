@@ -88,10 +88,6 @@
 
 - 07.02-Rust\nightly\flamegraph
 
-- 07.02-Rust\nightly\fselect
-
-- 07.02-Rust\nightly\geschichte
-
 - 07.02-Rust\nightly\gitui
 
 - 07.02-Rust\nightly\grex
@@ -114,7 +110,7 @@
 
 - 07.02-Rust\nightly\microbin
 
-- 07.02-Rust\nightly\miniature
+- 07.02-Rust\nightly\ocrs
 
 - 07.02-Rust\nightly\ouch
 
@@ -140,6 +136,8 @@
 
 - 07.02-Rust\nightly\television
 
+- 07.02-Rust\nightly\termframe
+
 - 07.02-Rust\nightly\tiller
 
 - 07.02-Rust\nightly\xleak
@@ -147,6 +145,10 @@
 - 07.02-Rust\nightly\yazi
 
 - 07.02-Rust\nightly\zoxide
+
+- 07.02-Rust\proj\ansi-strip
+
+- 07.02-Rust\proj\catimg
 
 - 07.02-Rust\proj\macors
 
@@ -192,19 +194,27 @@
 
 - 07.02-Rust\rarely\mdserve
 
+- 07.02-Rust\rarely\mpv_websocket
+
 - 07.02-Rust\rarely\mq
 
 - 07.02-Rust\rarely\mqt
 
 - 07.02-Rust\rarely\natvis4qt
 
+- 07.02-Rust\rarely\niho
+
+- 07.02-Rust\rarely\numbat
+
 - 07.02-Rust\rarely\procps
+
+- 07.02-Rust\rarely\resvg
 
 - 07.02-Rust\rarely\ripgrep-all
 
 - 07.02-Rust\rarely\rsv
 
-- 07.02-Rust\rarely\rv
+- 07.02-Rust\rarely\rupnpc
 
 - 07.02-Rust\rarely\sd
 
@@ -250,7 +260,11 @@
 
 - 07.03-C#\nightly\File-Tunnel
 
+- 07.03-C#\nightly\HexIO
+
 - 07.03-C#\nightly\PipeViewer
+
+- 07.03-C#\nightly\SmartContextMenu
 
 - 07.03-C#\nightly\ssh-copy-id-net
 
@@ -269,8 +283,6 @@
 - 07.03-C#\repo\TabGroupJump
 
 - 07.03-C#\repo\Transparency
-
-- 07.04-Golang\nightly\act
 
 - 07.04-Golang\nightly\croc
 
@@ -296,6 +308,8 @@
 
 - 07.04-Golang\nightly\pprof
 
+- 07.04-Golang\nightly\statoo
+
 - 07.04-Golang\nightly\uni
 
 - 07.04-Golang\rarely\dblab
@@ -310,9 +324,13 @@
 
 - 07.04-Golang\repo\wslpath
 
+- 07.05-libc\nightly\57497
+
 - 07.05-libc\nightly\DTrace-on-Windows
 
 - 07.05-libc\nightly\hidapi
+
+- 07.05-libc\nightly\libsixsel-dll
 
 - 07.05-libc\nightly\nob.h
 
@@ -408,9 +426,11 @@
 
 - 24.03-Bash\repo\git-extras
 
-- 25.01-Python\nightly\BetterWX
+- 25.01-Python\nightly\bincopy
 
 - 25.01-Python\nightly\dist
+
+- 25.01-Python\nightly\easyeda2kicad
 
 - 25.01-Python\nightly\ejs
 
@@ -451,6 +471,8 @@
 - 25.03-JavaScript\nightly\node-bcat
 
 - 25.03-JavaScript\nightly\xlsxdash
+
+- 25.03-JavaScript\proj\country-flags-emoji
 
 - 25.03-JavaScript\repo\find-lite
 
