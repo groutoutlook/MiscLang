@@ -26,19 +26,21 @@ build-nightly:
 alias fmt := format
 [no-cd]
 format args="nothing":
-    cargo fmt -- --check
-    cargo clippy -- -D warnings
+    cargo clippy --all-targets -- -D warnings
+    cargo fmt 
+
 # INFO: basic `run` recipe.
 alias r := run
 default_args := 'args here'
 run args=default_args:
     @Write-Host {{default_args}} -ForegroundColor Red
 
-var_test := "test format"
+var_test := ""
 alias t := test
-test *args=var_test: (format args)
-    # also something directly test behaviour.
-
+[no-cd]
+test *args=var_test:
+    cargo test --test {{args}}
+    
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"

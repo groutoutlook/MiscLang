@@ -45,8 +45,18 @@ seek:
 script:
     Write-Host "this is in powershell, without shebang syntax"
 
+
+[group('dev'),no-cd]
+clean:
+    uv clean (Split-path -Leaf $pwd)
+
+
 alias ins := install
 [no-cd]
-install:
-    uv tool install .
+install *args="":
+    uv tool install .{{args}}
     
+alias uins := uninstall
+[script,no-cd]
+uninstall:
+    uv tool install (Split-path -Leaf $pwd)

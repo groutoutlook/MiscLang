@@ -42,6 +42,8 @@
 
 - 07.01-C++\repo\constixel
 
+- 07.01-C++\repo\EmbeddedCoroutines
+
 - 07.01-C++\repo\glaze
 
 - 07.01-C++\repo\imguilog
@@ -49,8 +51,6 @@
 - 07.01-C++\repo\libmagicpp
 
 - 07.01-C++\repo\libremidi
-
-- 07.01-C++\repo\mdspan
 
 - 07.01-C++\repo\midifile
 
@@ -78,7 +78,9 @@
 
 - 07.02-Rust\nightly\biff
 
-- 07.02-Rust\nightly\choose
+- 07.02-Rust\nightly\claw-code
+
+- 07.02-Rust\nightly\cyme
 
 - 07.02-Rust\nightly\doxx
 
@@ -88,13 +90,7 @@
 
 - 07.02-Rust\nightly\flamegraph
 
-- 07.02-Rust\nightly\fselect
-
-- 07.02-Rust\nightly\geschichte
-
 - 07.02-Rust\nightly\gitui
-
-- 07.02-Rust\nightly\grex
 
 - 07.02-Rust\nightly\heh
 
@@ -104,17 +100,19 @@
 
 - 07.02-Rust\nightly\iroh-ssh
 
+- 07.02-Rust\nightly\jsongrep
+
 - 07.02-Rust\nightly\just
 
 - 07.02-Rust\nightly\kanata
-
-- 07.02-Rust\nightly\lstr
 
 - 07.02-Rust\nightly\mergiraf
 
 - 07.02-Rust\nightly\microbin
 
-- 07.02-Rust\nightly\miniature
+- 07.02-Rust\nightly\ocrs
+
+- 07.02-Rust\nightly\okapi
 
 - 07.02-Rust\nightly\ouch
 
@@ -132,21 +130,19 @@
 
 - 07.02-Rust\nightly\sendme
 
-- 07.02-Rust\nightly\starship-jj
-
 - 07.02-Rust\nightly\t
-
-- 07.02-Rust\nightly\taplo
 
 - 07.02-Rust\nightly\television
 
-- 07.02-Rust\nightly\tiller
+- 07.02-Rust\nightly\termframe
 
 - 07.02-Rust\nightly\xleak
 
-- 07.02-Rust\nightly\yazi
-
 - 07.02-Rust\nightly\zoxide
+
+- 07.02-Rust\proj\ansi-strip
+
+- 07.02-Rust\proj\catimg
 
 - 07.02-Rust\proj\macors
 
@@ -154,11 +150,7 @@
 
 - 07.02-Rust\proj\vid-pid-rs
 
-- 07.02-Rust\proj\xleak
-
 - 07.02-Rust\rarely\carl
-
-- 07.02-Rust\rarely\comrak
 
 - 07.02-Rust\rarely\coreutils
 
@@ -166,57 +158,27 @@
 
 - 07.02-Rust\rarely\domain-check
 
-- 07.02-Rust\rarely\effy
-
-- 07.02-Rust\rarely\Ferrite
-
-- 07.02-Rust\rarely\fresh
-
-- 07.02-Rust\rarely\gitu
-
 - 07.02-Rust\rarely\gping
 
 - 07.02-Rust\rarely\icann-rdap
 
 - 07.02-Rust\rarely\icy_sixel
 
-- 07.02-Rust\rarely\iscsI-client-rs
+- 07.02-Rust\rarely\jjdag
 
-- 07.02-Rust\rarely\keifu
+- 07.02-Rust\rarely\Neothesia
 
-- 07.02-Rust\rarely\lazyjj
+- 07.02-Rust\rarely\niho
 
-- 07.02-Rust\rarely\md-tui
+- 07.02-Rust\rarely\numbat
 
-- 07.02-Rust\rarely\mdfried
+- 07.02-Rust\rarely\resvg
 
-- 07.02-Rust\rarely\mdserve
-
-- 07.02-Rust\rarely\mq
-
-- 07.02-Rust\rarely\mqt
-
-- 07.02-Rust\rarely\natvis4qt
-
-- 07.02-Rust\rarely\procps
-
-- 07.02-Rust\rarely\ripgrep-all
-
-- 07.02-Rust\rarely\rsv
-
-- 07.02-Rust\rarely\rv
-
-- 07.02-Rust\rarely\sd
+- 07.02-Rust\rarely\rupnpc
 
 - 07.02-Rust\rarely\serie
 
 - 07.02-Rust\rarely\smartdns-rs
-
-- 07.02-Rust\rarely\suppaftp
-
-- 07.02-Rust\rarely\tabiew
-
-- 07.02-Rust\rarely\tokei
 
 - 07.02-Rust\rarely\topiary
 
@@ -225,8 +187,6 @@
 - 07.02-Rust\rarely\typst
 
 - 07.02-Rust\rarely\vsp-router
-
-- 07.02-Rust\rarely\websocat
 
 - 07.02-Rust\rarely\xh
 
@@ -244,13 +204,21 @@
 
 - 07.02-Rust\repo\wsl-dirutils
 
+- 07.03-C#\nightly\AudioDeviceCmdlets
+
+- 07.03-C#\nightly\BLEConsole
+
 - 07.03-C#\nightly\desktop-switcher
 
 - 07.03-C#\nightly\echoargs
 
 - 07.03-C#\nightly\File-Tunnel
 
+- 07.03-C#\nightly\HexIO
+
 - 07.03-C#\nightly\PipeViewer
+
+- 07.03-C#\nightly\SmartContextMenu
 
 - 07.03-C#\nightly\ssh-copy-id-net
 
@@ -269,8 +237,6 @@
 - 07.03-C#\repo\TabGroupJump
 
 - 07.03-C#\repo\Transparency
-
-- 07.04-Golang\nightly\act
 
 - 07.04-Golang\nightly\croc
 
@@ -296,11 +262,21 @@
 
 - 07.04-Golang\nightly\pprof
 
+- 07.04-Golang\nightly\statoo
+
 - 07.04-Golang\nightly\uni
+
+- 07.04-Golang\rarely\cs
 
 - 07.04-Golang\rarely\dblab
 
 - 07.04-Golang\rarely\neko
+
+- 07.04-Golang\rarely\neomd
+
+- 07.04-Golang\rarely\opentofu
+
+- 07.04-Golang\rarely\scc
 
 - 07.04-Golang\rarely\zipserve
 
@@ -310,9 +286,13 @@
 
 - 07.04-Golang\repo\wslpath
 
+- 07.05-libc\nightly\57497
+
 - 07.05-libc\nightly\DTrace-on-Windows
 
 - 07.05-libc\nightly\hidapi
+
+- 07.05-libc\nightly\libsixsel-dll
 
 - 07.05-libc\nightly\nob.h
 
@@ -408,13 +388,17 @@
 
 - 24.03-Bash\repo\git-extras
 
-- 25.01-Python\nightly\BetterWX
+- 25.01-Python\nightly\bincopy
 
-- 25.01-Python\nightly\dist
+- 25.01-Python\nightly\doujinshi-dl
 
-- 25.01-Python\nightly\ejs
+- 25.01-Python\nightly\doujinshi-dl-nhentai
+
+- 25.01-Python\nightly\easyeda2kicad
 
 - 25.01-Python\nightly\freecad-render-production
+
+- 25.01-Python\nightly\gallery-dl
 
 - 25.01-Python\nightly\jc
 
@@ -422,11 +406,13 @@
 
 - 25.01-Python\nightly\korean-romanizer
 
-- 25.01-Python\nightly\markitdown
-
 - 25.01-Python\nightly\MCU-Flash-Tools
 
-- 25.01-Python\nightly\meson
+- 25.01-Python\nightly\pyOCD
+
+- 25.01-Python\nightly\signal
+
+- 25.01-Python\nightly\Stash-Jellyfin-Proxy
 
 - 25.01-Python\nightly\visidata
 
@@ -442,15 +428,21 @@
 
 - 25.01-Python\rarely\VideOCR
 
+- 25.02-TypeScript\nightly\kicanvas
+
 - 25.02-TypeScript\nightly\mpls-vscode-client
 
 - 25.02-TypeScript\proj\startProj
 
 - 25.02-TypeScript\repo\serial-terminal
 
+- 25.03-JavaScript\nightly\Get-cookies.txt-LOCALLY
+
 - 25.03-JavaScript\nightly\node-bcat
 
 - 25.03-JavaScript\nightly\xlsxdash
+
+- 25.03-JavaScript\proj\country-flags-emoji
 
 - 25.03-JavaScript\repo\find-lite
 

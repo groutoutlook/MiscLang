@@ -11,13 +11,20 @@ _default:
     @just --list
 
 alias b := build
+[no-cd]
 build:
-    # build task here
-    # 
+    npm install && npm run build
+    
 alias r := run
-default_args := 'args here'
+default_args := ''
+[no-cd]
 run args=default_args:
-    @Write-Host {{default_args}} -ForegroundColor Red
+    npm run {{args}}
+
+alias sv := serve
+[no-cd]
+serve *args:
+    npm run serve {{args}}
 
 alias fmt := format
 format:
@@ -42,3 +49,8 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
+
+alias ei := edit-in-ide
+[no-cd]
+edit-in-ide *args:
+    code . {{args}}
