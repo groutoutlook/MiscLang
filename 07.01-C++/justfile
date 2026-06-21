@@ -24,7 +24,8 @@ edit-in-ide:
         echo "$defaultPath is the main project files"
         devenv $defaultPath
     } else {
-        echo 'nothing built'
+        Write-Host 'nothing built...'
+        devenv .
     }
    
 default_sln := "(rvpa *.sln)"

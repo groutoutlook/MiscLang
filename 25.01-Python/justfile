@@ -6,6 +6,7 @@ set script-interpreter := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
 set dotenv-filename	:= ".env"
 set unstable
 set fallback
+set lists
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 _default:

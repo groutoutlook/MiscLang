@@ -7,6 +7,7 @@ set script-interpreter := ["pwsh.exe", "-NoProfile", "-NoLogo", "-Command"]
 # WARN: should have get them in .gitignore.
 set dotenv-filename	:= ".env"
 set unstable
+set lists
 set fallback
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
@@ -40,7 +41,18 @@ alias t := test
 [no-cd]
 test *args=var_test:
     cargo test --test {{args}}
-    
+
+alias bbin := backup-binary
 [script]
-script:
-    Write-Host "this is in powershell, without shebang syntax"
+backup-binary:
+    function zqi{
+        Invoke-Expression  "zoxide query -i $($args -join " ")"
+    }
+
+    cp nightly\zo*\target\release\zoxide.exe "$(zqi scoop zo cur)"
+    cp nightly\rip*\target\release\rg.exe "$(zqi rip curr)"
+    cp nightly\tele*\target\release\tv.exe "$(zqi tele curr)"
+    cp nightly\hel*\target\opt\hx.exe "$(zqi hel curr)"
+    cp nightly\probe-*\target\release\probe-rs.exe "$(zqi rustup bin)"
+    cp nightly\stars*\target\release\starship.exe "$(zqi starship curr)"    
+

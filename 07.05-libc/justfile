@@ -10,7 +10,24 @@ set fallback
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
 _default:
     @just --list --unsorted
+
+alias make := cmake-invoking
+[group('dev'), no-cd]
+cmake-invoking:
+    md build && cd build && cmake (rvpa ..)
     
+alias ei:= edit-in-ide
+[group('dev'), no-cd, script]
+edit-in-ide:
+    $defaultPath =  (rvpa ./*sln*) ?? (rvpa ./build/*sln*)
+    if($defaultPath) {
+        echo "$defaultPath is the main project files"
+        devenv $defaultPath
+    } else {
+        Write-Host 'nothing built...'
+        devenv .
+    }
+   
 default_sln := "(rvpa *.sln)"
 alias b := build
 [group('dev')]
@@ -18,6 +35,7 @@ alias b := build
 build solution_name=default_sln:
     msbuild {{solution_name}} /property:Configuration=Release /p:Platform=x64
     msbuild {{solution_name}} /property:Configuration=Release 
+
 
 alias r := run
 default_args := 'args here'
@@ -49,3 +67,10 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
+
+
+[group('dev')]
+wt:
+    #!{{ shebang }}
+    wt -f new-tab -p "Developer Command Prompt for VS 18" -d  {{ invocation_directory() }} --tabColor '#FFFFFF'
+

@@ -50,3 +50,16 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
+    
+alias ei:= edit-in-ide
+[group('dev'), no-cd, script]
+edit-in-ide:
+    $defaultPath =  (rvpa ./*sln*) ?? (rvpa ./build/*sln*)
+    if($defaultPath) {
+        echo "$defaultPath is the main project files"
+        devenv $defaultPath
+    } else {
+        Write-Host 'nothing built...'
+        devenv .
+    }
+ 

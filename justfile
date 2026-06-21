@@ -4,6 +4,7 @@ set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
 set script-interpreter := ["pwsh.exe", "-NoProfile","-NoLogo", "-Command"]
 set dotenv-load
 set unstable
+set lists
 set dotenv-filename	:= ".env"
 # set dotenv-required := true
 export JUST_ENV := "just_env" # WARN: this is also a method to export env var. 
@@ -55,6 +56,10 @@ alias t := test
 test:
     # also something directly test behaviour.
 
+alias ei:= edit-in-ide
+[group('dev')]
+edit-in-ide:
+    code . # should **not** be no-cd.
 
 # INFO: it's heere mostly because historic reason.
 alias td := track_dir

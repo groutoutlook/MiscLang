@@ -43,3 +43,8 @@ seek:
 [script]
 script:
     Write-Host "this is in powershell, without shebang syntax"
+    
+alias ei:= edit-in-ide
+[no-cd,group('dev')]
+edit-in-ide:
+    code .

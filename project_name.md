@@ -1,3 +1,5 @@
+- 07.01-C++\nightly\.vs
+
 - 07.01-C++\nightly\AutoHotkey
 
 - 07.01-C++\nightly\Bear
@@ -5,6 +7,8 @@
 - 07.01-C++\nightly\build
 
 - 07.01-C++\nightly\MouseKeyRecorder
+
+- 07.01-C++\nightly\MPD
 
 - 07.01-C++\nightly\Serial-Studio
 
@@ -46,6 +50,8 @@
 
 - 07.01-C++\repo\glaze
 
+- 07.01-C++\repo\icu
+
 - 07.01-C++\repo\imguilog
 
 - 07.01-C++\repo\libmagicpp
@@ -68,8 +74,6 @@
 
 - 07.01-C++\repo\tinyfiledialogs
 
-- 07.01-C++\repo\vcpkg-registry
-
 - 07.01-C++\repo\vk-gltf-viewer
 
 - 07.02-Rust\book\crp
@@ -78,7 +82,7 @@
 
 - 07.02-Rust\nightly\biff
 
-- 07.02-Rust\nightly\claw-code
+- 07.02-Rust\nightly\binsider
 
 - 07.02-Rust\nightly\cyme
 
@@ -89,6 +93,8 @@
 - 07.02-Rust\nightly\fend
 
 - 07.02-Rust\nightly\flamegraph
+
+- 07.02-Rust\nightly\forgejo-cli
 
 - 07.02-Rust\nightly\gitui
 
@@ -106,11 +112,9 @@
 
 - 07.02-Rust\nightly\kanata
 
+- 07.02-Rust\nightly\llmfit
+
 - 07.02-Rust\nightly\mergiraf
-
-- 07.02-Rust\nightly\microbin
-
-- 07.02-Rust\nightly\ocrs
 
 - 07.02-Rust\nightly\okapi
 
@@ -130,6 +134,8 @@
 
 - 07.02-Rust\nightly\sendme
 
+- 07.02-Rust\nightly\starship
+
 - 07.02-Rust\nightly\t
 
 - 07.02-Rust\nightly\television
@@ -138,9 +144,13 @@
 
 - 07.02-Rust\nightly\xleak
 
+- 07.02-Rust\nightly\Zarumet
+
 - 07.02-Rust\nightly\zoxide
 
 - 07.02-Rust\proj\ansi-strip
+
+- 07.02-Rust\proj\card
 
 - 07.02-Rust\proj\catimg
 
@@ -150,15 +160,25 @@
 
 - 07.02-Rust\proj\vid-pid-rs
 
+- 07.02-Rust\rarely\blogtato
+
 - 07.02-Rust\rarely\carl
+
+- 07.02-Rust\rarely\comrak
 
 - 07.02-Rust\rarely\coreutils
 
 - 07.02-Rust\rarely\diffutils
 
+- 07.02-Rust\rarely\dl-nzb
+
 - 07.02-Rust\rarely\domain-check
 
+- 07.02-Rust\rarely\gengo
+
 - 07.02-Rust\rarely\gping
+
+- 07.02-Rust\rarely\hyperfine
 
 - 07.02-Rust\rarely\icann-rdap
 
@@ -166,19 +186,29 @@
 
 - 07.02-Rust\rarely\jjdag
 
+- 07.02-Rust\rarely\md-tui
+
+- 07.02-Rust\rarely\mdfried
+
 - 07.02-Rust\rarely\Neothesia
 
 - 07.02-Rust\rarely\niho
 
 - 07.02-Rust\rarely\numbat
 
+- 07.02-Rust\rarely\onefetch
+
 - 07.02-Rust\rarely\resvg
 
 - 07.02-Rust\rarely\rupnpc
 
+- 07.02-Rust\rarely\rustypaste
+
 - 07.02-Rust\rarely\serie
 
 - 07.02-Rust\rarely\smartdns-rs
+
+- 07.02-Rust\rarely\termusic
 
 - 07.02-Rust\rarely\topiary
 
@@ -187,6 +217,8 @@
 - 07.02-Rust\rarely\typst
 
 - 07.02-Rust\rarely\vsp-router
+
+- 07.02-Rust\rarely\wx-dump-4
 
 - 07.02-Rust\rarely\xh
 
@@ -216,6 +248,8 @@
 
 - 07.03-C#\nightly\HexIO
 
+- 07.03-C#\nightly\LRReader
+
 - 07.03-C#\nightly\PipeViewer
 
 - 07.03-C#\nightly\SmartContextMenu
@@ -229,6 +263,8 @@
 - 07.03-C#\proj\csharp-playground
 
 - 07.03-C#\proj\serverless-csharp
+
+- 07.03-C#\rarely\Kavita
 
 - 07.03-C#\repo\HighlighterVS
 
@@ -246,11 +282,9 @@
 
 - 07.04-Golang\nightly\fx
 
-- 07.04-Golang\nightly\gdu
-
 - 07.04-Golang\nightly\gitee_cli
 
-- 07.04-Golang\nightly\klog
+- 07.04-Golang\nightly\gonic
 
 - 07.04-Golang\nightly\lazygit
 
@@ -264,19 +298,25 @@
 
 - 07.04-Golang\nightly\statoo
 
+- 07.04-Golang\nightly\subtitle-to-lrc
+
 - 07.04-Golang\nightly\uni
+
+- 07.04-Golang\nightly\wx_channels_download
 
 - 07.04-Golang\rarely\cs
 
 - 07.04-Golang\rarely\dblab
 
+- 07.04-Golang\rarely\hut
+
 - 07.04-Golang\rarely\neko
 
 - 07.04-Golang\rarely\neomd
 
-- 07.04-Golang\rarely\opentofu
-
 - 07.04-Golang\rarely\scc
+
+- 07.04-Golang\rarely\ytcast
 
 - 07.04-Golang\rarely\zipserve
 
@@ -293,6 +333,10 @@
 - 07.05-libc\nightly\hidapi
 
 - 07.05-libc\nightly\libsixsel-dll
+
+- 07.05-libc\nightly\mixramp
+
+- 07.05-libc\nightly\mpc
 
 - 07.05-libc\nightly\nob.h
 
@@ -322,11 +366,13 @@
 
 - 07.07-Kotlin\nightly\crosspaste-desktop
 
+- 07.07-Kotlin\repo\android-player
+
+- 07.07-Zig\nightly\fizzy
+
+- 07.07-Zig\nightly\flow
+
 - 07.07-Zig\nightly\odiff
-
-- 07.07-Zig\nightly\pixi
-
-- 07.07-Zig\nightly\superhtml
 
 - 07.07-Zig\proj\zig-playground
 
@@ -390,6 +436,10 @@
 
 - 25.01-Python\nightly\bincopy
 
+- 25.01-Python\nightly\catt
+
+- 25.01-Python\nightly\dist
+
 - 25.01-Python\nightly\doujinshi-dl
 
 - 25.01-Python\nightly\doujinshi-dl-nhentai
@@ -400,9 +450,9 @@
 
 - 25.01-Python\nightly\gallery-dl
 
-- 25.01-Python\nightly\jc
-
 - 25.01-Python\nightly\jrnl
+
+- 25.01-Python\nightly\kanjiconv
 
 - 25.01-Python\nightly\korean-romanizer
 
@@ -411,8 +461,6 @@
 - 25.01-Python\nightly\pyOCD
 
 - 25.01-Python\nightly\signal
-
-- 25.01-Python\nightly\Stash-Jellyfin-Proxy
 
 - 25.01-Python\nightly\visidata
 
@@ -424,13 +472,21 @@
 
 - 25.01-Python\proj\python-playground
 
+- 25.01-Python\rarely\CoomerDL
+
 - 25.01-Python\rarely\copyparty
 
 - 25.01-Python\rarely\VideOCR
 
+- 25.02-TypeScript\nightly\Android-Boot-Animator
+
+- 25.02-TypeScript\nightly\KiCAD-Prism
+
 - 25.02-TypeScript\nightly\kicanvas
 
 - 25.02-TypeScript\nightly\mpls-vscode-client
+
+- 25.02-TypeScript\nightly\wechat-article-exporter
 
 - 25.02-TypeScript\proj\startProj
 
@@ -439,6 +495,8 @@
 - 25.03-JavaScript\nightly\Get-cookies.txt-LOCALLY
 
 - 25.03-JavaScript\nightly\node-bcat
+
+- 25.03-JavaScript\nightly\vllink-webui
 
 - 25.03-JavaScript\nightly\xlsxdash
 
