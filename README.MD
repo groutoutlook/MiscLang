@@ -57,6 +57,7 @@
 - Python
 - TypeScript
 - OCaml
+- Perl
 ## 26 - Iterative languages
 ## 27 - Languages by memory management type
 ## 28 - List-based languages – LISPs

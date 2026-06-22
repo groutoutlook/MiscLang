@@ -362,7 +362,7 @@
 
 - 07.05-libc\repo\rfxgen
 
-- 07.06-Java\nightly\kanada
+- 07.06-Java\nightly\re-director
 
 - 07.07-Kotlin\nightly\crosspaste-desktop
 
@@ -503,6 +503,8 @@
 - 25.03-JavaScript\proj\country-flags-emoji
 
 - 25.03-JavaScript\repo\find-lite
+
+- 25.04-Perl\nightly\LANraragi
 
 - 33.01-F#\nightly\pocof
 
