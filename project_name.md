@@ -90,6 +90,8 @@
 
 - 07.02-Rust\nightly\dust
 
+- 07.02-Rust\nightly\dysk
+
 - 07.02-Rust\nightly\fend
 
 - 07.02-Rust\nightly\flamegraph
@@ -133,6 +135,8 @@
 - 07.02-Rust\nightly\scooter
 
 - 07.02-Rust\nightly\sendme
+
+- 07.02-Rust\nightly\smartdns-rs
 
 - 07.02-Rust\nightly\starship
 
@@ -302,6 +306,8 @@
 
 - 07.04-Golang\nightly\uni
 
+- 07.04-Golang\nightly\whosthere
+
 - 07.04-Golang\nightly\wx_channels_download
 
 - 07.04-Golang\rarely\cs
@@ -457,6 +463,8 @@
 - 25.01-Python\nightly\korean-romanizer
 
 - 25.01-Python\nightly\MCU-Flash-Tools
+
+- 25.01-Python\nightly\Mklink-AI-Probe
 
 - 25.01-Python\nightly\pyOCD
 
