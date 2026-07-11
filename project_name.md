@@ -164,8 +164,6 @@
 
 - 07.02-Rust\proj\vid-pid-rs
 
-- 07.02-Rust\rarely\blogtato
-
 - 07.02-Rust\rarely\carl
 
 - 07.02-Rust\rarely\comrak
@@ -503,6 +501,8 @@
 - 25.03-JavaScript\nightly\Get-cookies.txt-LOCALLY
 
 - 25.03-JavaScript\nightly\node-bcat
+
+- 25.03-JavaScript\nightly\refined-forgejo
 
 - 25.03-JavaScript\nightly\vllink-webui
 
