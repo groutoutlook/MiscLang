@@ -9,6 +9,7 @@ build
 .vs
 out
 bin
+*.exe
 
 # INFO: since I patch lots of my personal software, have to start reignore things.
 !*patch
