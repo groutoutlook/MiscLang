@@ -1,0 +1,38 @@
+shebang := if os() == 'windows' { 'pwsh.exe' } else { '/usr/bin/env pwsh' }
+set shell := ["nu", "-c"]
+set windows-shell := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
+set dotenv-load := true
+set script-interpreter := ["pwsh.exe", "-NoLogo", "-NoProfile","-Command"]
+set dotenv-filename	:= ".env"
+set unstable
+set fallback
+set lists
+# set dotenv-required := true
+export JUST_ENV := "just_env" # WARN: this is also a method to export env var.
+_default:
+    @just --list
+
+alias b := build
+[no-cd]
+build:
+    uv build . # probably.
+
+alias r := run
+default_args := 'args here'
+run args=default_args:
+    @Write-Host {{default_args}} -ForegroundColor Red
+
+
+[group('dev'),no-cd]
+clean:
+    uv clean (Split-path -Leaf $pwd)
+
+alias ins := install
+[no-cd]
+install *args="":
+    pip install .
+
+alias uins := uninstall
+[script,no-cd]
+uninstall:
+    uv tool install (Split-path -Leaf $pwd)
