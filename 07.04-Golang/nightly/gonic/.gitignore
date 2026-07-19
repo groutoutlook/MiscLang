@@ -15,4 +15,6 @@ dist
 .env
 config
 genre-tree
-/gonic.exe
+.gocache
+cache
+*.exe

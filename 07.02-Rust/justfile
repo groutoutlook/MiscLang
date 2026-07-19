@@ -51,8 +51,8 @@ backup-binary:
 
     cp nightly\zo*\target\release\zoxide.exe "$(zqi scoop zo cur)"
     cp nightly\rip*\target\release\rg.exe "$(zqi rip curr)"
-    cp nightly\tele*\target\release\tv.exe "$(zqi tele curr)"
+    # cp nightly\tele*\target\release\tv.exe "$(zqi tele curr)"
     cp nightly\hel*\target\opt\hx.exe "$(zqi hel curr)"
-    cp nightly\probe-*\target\release\probe-rs.exe "$(zqi rustup bin)"
+    # cp nightly\probe-*\target\release\probe-rs.exe "$(zqi rustup bin)"
     cp nightly\stars*\target\release\starship.exe "$(zqi starship curr)"    
 

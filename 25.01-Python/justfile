@@ -28,7 +28,7 @@ format:
 
 alias t := test
 test:
-    # test.
+    uv run pytest
 
 alias w := watch
 watch:
