@@ -1,0 +1,30 @@
+set dotenv-load := false
+compose := "docker-compose --project-directory contrib/container --env-file contrib/container/.env -f contrib/container/docker-compose.yml"
+
+alias r := start
+alias run := start
+start:
+    {{compose}} up -d
+
+# First-time setup only. Creates the database schema and prompts for an admin account.
+setup:
+    {{compose}} run --rm inventree-server invoke update
+    {{compose}} run --rm inventree-server invoke superuser
+    {{compose}} up -d
+
+# Pull the new image, back up data, apply migrations, and restart the services.
+update:
+    {{compose}} down
+    {{compose}} pull
+    {{compose}} run --rm inventree-server invoke update
+    {{compose}} up -d
+
+# Create an explicit database and media backup.
+backup:
+    {{compose}} run --rm inventree-server invoke backup
+
+stop:
+    {{compose}} down
+logs:
+    {{compose}} logs -f
+

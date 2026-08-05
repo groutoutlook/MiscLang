@@ -49,6 +49,7 @@
 ## 22 - Hardware description languages
 - Verilog
 ## 23 - Imperative languages
+- PHP
 ## 24 - Interactive mode languages
 - PowerShell
 - Nushell

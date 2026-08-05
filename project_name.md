@@ -4,13 +4,7 @@
 
 - 07.01-C++\nightly\Bear
 
-- 07.01-C++\nightly\build
-
 - 07.01-C++\nightly\MouseKeyRecorder
-
-- 07.01-C++\nightly\MPD
-
-- 07.01-C++\nightly\Serial-Studio
 
 - 07.01-C++\nightly\uvConvertor
 
@@ -80,6 +74,8 @@
 
 - 07.02-Rust\book\First-Ever-mdBook
 
+- 07.02-Rust\nightly\bat
+
 - 07.02-Rust\nightly\biff
 
 - 07.02-Rust\nightly\binsider
@@ -108,8 +104,6 @@
 
 - 07.02-Rust\nightly\iroh-ssh
 
-- 07.02-Rust\nightly\jsongrep
-
 - 07.02-Rust\nightly\just
 
 - 07.02-Rust\nightly\kanata
@@ -126,9 +120,9 @@
 
 - 07.02-Rust\nightly\patch
 
-- 07.02-Rust\nightly\posh-fzf
+- 07.02-Rust\nightly\PortWatch
 
-- 07.02-Rust\nightly\probe-rs
+- 07.02-Rust\nightly\posh-fzf
 
 - 07.02-Rust\nightly\ripgrep
 
@@ -141,8 +135,6 @@
 - 07.02-Rust\nightly\starship
 
 - 07.02-Rust\nightly\t
-
-- 07.02-Rust\nightly\television
 
 - 07.02-Rust\nightly\termframe
 
@@ -176,6 +168,8 @@
 
 - 07.02-Rust\rarely\domain-check
 
+- 07.02-Rust\rarely\dufs
+
 - 07.02-Rust\rarely\gengo
 
 - 07.02-Rust\rarely\gping
@@ -188,9 +182,15 @@
 
 - 07.02-Rust\rarely\jjdag
 
+- 07.02-Rust\rarely\liteparse
+
 - 07.02-Rust\rarely\md-tui
 
 - 07.02-Rust\rarely\mdfried
+
+- 07.02-Rust\rarely\miro
+
+- 07.02-Rust\rarely\mupdf-rs
 
 - 07.02-Rust\rarely\Neothesia
 
@@ -206,23 +206,17 @@
 
 - 07.02-Rust\rarely\rustypaste
 
+- 07.02-Rust\rarely\rustypaste-cli
+
 - 07.02-Rust\rarely\serie
 
-- 07.02-Rust\rarely\smartdns-rs
+- 07.02-Rust\rarely\StringZilla-CLI
 
 - 07.02-Rust\rarely\termusic
 
 - 07.02-Rust\rarely\topiary
 
-- 07.02-Rust\rarely\typos
-
-- 07.02-Rust\rarely\typst
-
 - 07.02-Rust\rarely\vsp-router
-
-- 07.02-Rust\rarely\wx-dump-4
-
-- 07.02-Rust\rarely\xh
 
 - 07.02-Rust\repo\calamine
 
@@ -240,21 +234,13 @@
 
 - 07.03-C#\nightly\AudioDeviceCmdlets
 
-- 07.03-C#\nightly\BLEConsole
-
 - 07.03-C#\nightly\desktop-switcher
 
 - 07.03-C#\nightly\echoargs
 
 - 07.03-C#\nightly\File-Tunnel
 
-- 07.03-C#\nightly\HexIO
-
-- 07.03-C#\nightly\LRReader
-
 - 07.03-C#\nightly\PipeViewer
-
-- 07.03-C#\nightly\SmartContextMenu
 
 - 07.03-C#\nightly\ssh-copy-id-net
 
@@ -293,8 +279,6 @@
 - 07.04-Golang\nightly\noxdir
 
 - 07.04-Golang\nightly\ov
-
-- 07.04-Golang\nightly\patch
 
 - 07.04-Golang\nightly\pprof
 
@@ -388,6 +372,8 @@
 
 - 21.01-Dart\nightly\overkeys
 
+- 23.01-PHP\nightly\Part-DB-server
+
 - 24.01-PowerShell\proj\adb_p7
 
 - 24.01-PowerShell\proj\gh_profile
@@ -438,6 +424,8 @@
 
 - 24.03-Bash\repo\git-extras
 
+- 25.01-Python\nightly\beets
+
 - 25.01-Python\nightly\bincopy
 
 - 25.01-Python\nightly\catt
@@ -454,6 +442,8 @@
 
 - 25.01-Python\nightly\gallery-dl
 
+- 25.01-Python\nightly\inventree
+
 - 25.01-Python\nightly\jrnl
 
 - 25.01-Python\nightly\kanjiconv
@@ -462,15 +452,9 @@
 
 - 25.01-Python\nightly\MCU-Flash-Tools
 
-- 25.01-Python\nightly\Mklink-AI-Probe
-
 - 25.01-Python\nightly\pyOCD
 
 - 25.01-Python\nightly\signal
-
-- 25.01-Python\nightly\visidata
-
-- 25.01-Python\nightly\windows-curses
 
 - 25.01-Python\nightly\yt-dlp
 
@@ -492,6 +476,8 @@
 
 - 25.02-TypeScript\nightly\mpls-vscode-client
 
+- 25.02-TypeScript\nightly\vimium
+
 - 25.02-TypeScript\nightly\wechat-article-exporter
 
 - 25.02-TypeScript\proj\startProj
@@ -505,6 +491,8 @@
 - 25.03-JavaScript\nightly\refined-forgejo
 
 - 25.03-JavaScript\nightly\vllink-webui
+
+- 25.03-JavaScript\nightly\web_highlight
 
 - 25.03-JavaScript\nightly\xlsxdash
 
@@ -553,4 +541,6 @@
 - 60.02-VSScript\proj\VSScriptSample
 
 - 99.01-CSS\nightly\personalCSS
+
+- 99.02-CSV\nightly\Part-category-schema
 
