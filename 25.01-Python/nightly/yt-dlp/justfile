@@ -41,4 +41,4 @@ test:
 alias ins := install
 [no-cd]
 install *args="":
-    py -m pip install .[default,curl_cffi]
+    python -m pip install .[default,curl_cffi]

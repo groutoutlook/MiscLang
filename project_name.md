@@ -74,8 +74,6 @@
 
 - 07.02-Rust\book\First-Ever-mdBook
 
-- 07.02-Rust\nightly\bat
-
 - 07.02-Rust\nightly\biff
 
 - 07.02-Rust\nightly\binsider
@@ -108,13 +106,13 @@
 
 - 07.02-Rust\nightly\kanata
 
-- 07.02-Rust\nightly\llmfit
-
 - 07.02-Rust\nightly\mergiraf
 
 - 07.02-Rust\nightly\okapi
 
 - 07.02-Rust\nightly\ouch
+
+- 07.02-Rust\nightly\oxker
 
 - 07.02-Rust\nightly\pastel
 
@@ -130,19 +128,11 @@
 
 - 07.02-Rust\nightly\sendme
 
-- 07.02-Rust\nightly\smartdns-rs
-
 - 07.02-Rust\nightly\starship
-
-- 07.02-Rust\nightly\t
 
 - 07.02-Rust\nightly\termframe
 
 - 07.02-Rust\nightly\xleak
-
-- 07.02-Rust\nightly\Zarumet
-
-- 07.02-Rust\nightly\zoxide
 
 - 07.02-Rust\proj\ansi-strip
 
@@ -164,15 +154,9 @@
 
 - 07.02-Rust\rarely\diffutils
 
-- 07.02-Rust\rarely\dl-nzb
-
-- 07.02-Rust\rarely\domain-check
-
 - 07.02-Rust\rarely\dufs
 
-- 07.02-Rust\rarely\gengo
-
-- 07.02-Rust\rarely\gping
+- 07.02-Rust\rarely\himalaya-tui
 
 - 07.02-Rust\rarely\hyperfine
 
@@ -180,25 +164,11 @@
 
 - 07.02-Rust\rarely\icy_sixel
 
-- 07.02-Rust\rarely\jjdag
-
-- 07.02-Rust\rarely\liteparse
-
-- 07.02-Rust\rarely\md-tui
-
-- 07.02-Rust\rarely\mdfried
-
 - 07.02-Rust\rarely\miro
-
-- 07.02-Rust\rarely\mupdf-rs
 
 - 07.02-Rust\rarely\Neothesia
 
-- 07.02-Rust\rarely\niho
-
 - 07.02-Rust\rarely\numbat
-
-- 07.02-Rust\rarely\onefetch
 
 - 07.02-Rust\rarely\resvg
 
@@ -212,11 +182,7 @@
 
 - 07.02-Rust\rarely\StringZilla-CLI
 
-- 07.02-Rust\rarely\termusic
-
-- 07.02-Rust\rarely\topiary
-
-- 07.02-Rust\rarely\vsp-router
+- 07.02-Rust\rarely\VirtualDesktopAccessor
 
 - 07.02-Rust\repo\calamine
 
@@ -270,17 +236,17 @@
 
 - 07.04-Golang\nightly\fx
 
-- 07.04-Golang\nightly\gitee_cli
+- 07.04-Golang\nightly\go2rtc
 
 - 07.04-Golang\nightly\gonic
 
 - 07.04-Golang\nightly\lazygit
 
-- 07.04-Golang\nightly\noxdir
-
 - 07.04-Golang\nightly\ov
 
 - 07.04-Golang\nightly\pprof
+
+- 07.04-Golang\nightly\serialserver
 
 - 07.04-Golang\nightly\statoo
 
@@ -303,8 +269,6 @@
 - 07.04-Golang\rarely\neomd
 
 - 07.04-Golang\rarely\scc
-
-- 07.04-Golang\rarely\ytcast
 
 - 07.04-Golang\rarely\zipserve
 
@@ -349,6 +313,8 @@
 - 07.05-libc\repo\raudio
 
 - 07.05-libc\repo\rfxgen
+
+- 07.06-Java\nightly\openboxes
 
 - 07.06-Java\nightly\re-director
 
@@ -444,6 +410,8 @@
 
 - 25.01-Python\nightly\inventree
 
+- 25.01-Python\nightly\jellyfin-mpv-shim
+
 - 25.01-Python\nightly\jrnl
 
 - 25.01-Python\nightly\kanjiconv
@@ -452,9 +420,15 @@
 
 - 25.01-Python\nightly\MCU-Flash-Tools
 
+- 25.01-Python\nightly\mediacms
+
+- 25.01-Python\nightly\postgres_data
+
 - 25.01-Python\nightly\pyOCD
 
 - 25.01-Python\nightly\signal
+
+- 25.01-Python\nightly\xiaomi-cw300-unifi
 
 - 25.01-Python\nightly\yt-dlp
 
