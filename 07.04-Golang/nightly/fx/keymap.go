@@ -1,6 +1,6 @@
 package main
 
-import "github.com/charmbracelet/bubbles/key"
+import "charm.land/bubbles/v2/key"
 
 type KeyMap struct {
 	Up                  key.Binding `category:"Navigation"`
@@ -9,10 +9,13 @@ type KeyMap struct {
 	PageDown            key.Binding `category:"Navigation"`
 	HalfPageUp          key.Binding `category:"Navigation"`
 	HalfPageDown        key.Binding `category:"Navigation"`
+	ScrollUp            key.Binding `category:"Navigation"`
+	ScrollDown          key.Binding `category:"Navigation"`
 	GotoTop             key.Binding `category:"Navigation"`
 	GotoBottom          key.Binding `category:"Navigation"`
 	NextSibling         key.Binding `category:"Navigation"`
 	PrevSibling         key.Binding `category:"Navigation"`
+	MatchBracket        key.Binding `category:"Navigation"`
 	Expand              key.Binding `category:"Expand / Collapse"`
 	Collapse            key.Binding `category:"Expand / Collapse"`
 	ExpandRecursively   key.Binding `category:"Expand / Collapse"`
@@ -29,11 +32,12 @@ type KeyMap struct {
 	Delete              key.Binding `category:"Actions"`
 	Preview             key.Binding `category:"Actions"`
 	Print               key.Binding `category:"Actions"`
-	Open                key.Binding `category:"Actions"`
+	Reload              key.Binding `category:"Actions"`
 	ToggleWrap          key.Binding `category:"View"`
 	ShowSelector        key.Binding `category:"View"`
 	GoBack              key.Binding `category:"Navigation"`
 	GoForward           key.Binding `category:"Navigation"`
+	Query               key.Binding `category:"Other"`
 	Help                key.Binding `category:"Other"`
 	CommandLine         key.Binding `category:"Other"`
 	Quit                key.Binding `category:"Other"`
@@ -45,7 +49,7 @@ var keyMap KeyMap
 func init() {
 	keyMap = KeyMap{
 		Quit: key.NewBinding(
-			key.WithKeys("q", "ctrl+c", "esc"),
+			key.WithKeys("q", "ctrl+c"),
 			key.WithHelp("", "exit program"),
 		),
 		Suspend: key.NewBinding(
@@ -53,7 +57,7 @@ func init() {
 			key.WithHelp("", "suspend program"),
 		),
 		PageDown: key.NewBinding(
-			key.WithKeys("pgdown", " ", "f"),
+			key.WithKeys("pgdown", "space", "f"),
 			key.WithHelp("pgdown, space, f", "page down"),
 		),
 		PageUp: key.NewBinding(
@@ -67,6 +71,14 @@ func init() {
 		HalfPageDown: key.NewBinding(
 			key.WithKeys("ctrl+d"),
 			key.WithHelp("", "half page down"),
+		),
+		ScrollUp: key.NewBinding(
+			key.WithKeys("ctrl+y"),
+			key.WithHelp("", "scroll view up one line"),
+		),
+		ScrollDown: key.NewBinding(
+			key.WithKeys("ctrl+e"),
+			key.WithHelp("", "scroll view down one line"),
 		),
 		GotoTop: key.NewBinding(
 			key.WithKeys("g", "home"),
@@ -91,6 +103,10 @@ func init() {
 		Up: key.NewBinding(
 			key.WithKeys("up", "k"),
 			key.WithHelp("", "up"),
+		),
+		Query: key.NewBinding(
+			key.WithKeys("."),
+			key.WithHelp("", "open query input (tab completes keys)"),
 		),
 		Help: key.NewBinding(
 			key.WithKeys("?"),
@@ -132,6 +148,10 @@ func init() {
 			key.WithKeys("K", "shift+up"),
 			key.WithHelp("", "previous sibling"),
 		),
+		MatchBracket: key.NewBinding(
+			key.WithKeys("%"),
+			key.WithHelp("", "jump to matching bracket"),
+		),
 		ToggleWrap: key.NewBinding(
 			key.WithKeys("z"),
 			key.WithHelp("", "toggle strings wrap"),
@@ -172,9 +192,9 @@ func init() {
 			key.WithKeys("P"),
 			key.WithHelp("", "print to stdout"),
 		),
-		Open: key.NewBinding(
-			key.WithKeys("v"),
-			key.WithHelp("", "open in editor"),
+		Reload: key.NewBinding(
+			key.WithKeys("r"),
+			key.WithHelp("", "reload file"),
 		),
 		GoBack: key.NewBinding(
 			key.WithKeys("["),
@@ -193,8 +213,8 @@ var (
 	yankKey         = key.NewBinding(key.WithKeys("k"))
 	yankPath        = key.NewBinding(key.WithKeys("p"))
 	yankKeyValue    = key.NewBinding(key.WithKeys("b"))
-	arrowUp         = key.NewBinding(key.WithKeys("up"))
-	arrowDown       = key.NewBinding(key.WithKeys("down"))
 	showSizes       = key.NewBinding(key.WithKeys("s"))
 	showLineNumbers = key.NewBinding(key.WithKeys("l"))
+	ctrlC           = key.NewBinding(key.WithKeys("ctrl+c"))
+	escKey          = key.NewBinding(key.WithKeys("esc"))
 )

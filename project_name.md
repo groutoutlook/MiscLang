@@ -1,14 +1,14 @@
+- .pytest_cache\v\cache
+
 - 07.01-C++\nightly\.vs
 
 - 07.01-C++\nightly\AutoHotkey
 
-- 07.01-C++\nightly\Bear
-
 - 07.01-C++\nightly\MouseKeyRecorder
 
-- 07.01-C++\nightly\uvConvertor
+- 07.01-C++\nightly\ScreenWatermark
 
-- 07.01-C++\nightly\WinUSB_DMA_MJPEG_Camera
+- 07.01-C++\nightly\uvConvertor
 
 - 07.01-C++\nightly\x-tools
 
@@ -78,6 +78,8 @@
 
 - 07.02-Rust\nightly\binsider
 
+- 07.02-Rust\nightly\cache
+
 - 07.02-Rust\nightly\cyme
 
 - 07.02-Rust\nightly\doxx
@@ -92,6 +94,10 @@
 
 - 07.02-Rust\nightly\forgejo-cli
 
+- 07.02-Rust\nightly\ghtui
+
+- 07.02-Rust\nightly\gitu
+
 - 07.02-Rust\nightly\gitui
 
 - 07.02-Rust\nightly\heh
@@ -102,11 +108,15 @@
 
 - 07.02-Rust\nightly\iroh-ssh
 
+- 07.02-Rust\nightly\jlot
+
 - 07.02-Rust\nightly\just
 
 - 07.02-Rust\nightly\kanata
 
 - 07.02-Rust\nightly\mergiraf
+
+- 07.02-Rust\nightly\metronome
 
 - 07.02-Rust\nightly\okapi
 
@@ -122,6 +132,8 @@
 
 - 07.02-Rust\nightly\posh-fzf
 
+- 07.02-Rust\nightly\probe-rs
+
 - 07.02-Rust\nightly\ripgrep
 
 - 07.02-Rust\nightly\scooter
@@ -131,6 +143,8 @@
 - 07.02-Rust\nightly\starship
 
 - 07.02-Rust\nightly\termframe
+
+- 07.02-Rust\nightly\tiller
 
 - 07.02-Rust\nightly\xleak
 
@@ -146,6 +160,8 @@
 
 - 07.02-Rust\proj\vid-pid-rs
 
+- 07.02-Rust\rarely\Bear
+
 - 07.02-Rust\rarely\carl
 
 - 07.02-Rust\rarely\comrak
@@ -155,6 +171,8 @@
 - 07.02-Rust\rarely\diffutils
 
 - 07.02-Rust\rarely\dufs
+
+- 07.02-Rust\rarely\glyphweave
 
 - 07.02-Rust\rarely\himalaya-tui
 
@@ -180,7 +198,11 @@
 
 - 07.02-Rust\rarely\serie
 
+- 07.02-Rust\rarely\soundscope
+
 - 07.02-Rust\rarely\StringZilla-CLI
+
+- 07.02-Rust\rarely\tabiew
 
 - 07.02-Rust\rarely\VirtualDesktopAccessor
 
@@ -224,6 +246,8 @@
 
 - 07.03-C#\repo\minimalVS
 
+- 07.03-C#\repo\PathAndLine
+
 - 07.03-C#\repo\TabGroupJump
 
 - 07.03-C#\repo\Transparency
@@ -239,6 +263,8 @@
 - 07.04-Golang\nightly\go2rtc
 
 - 07.04-Golang\nightly\gonic
+
+- 07.04-Golang\nightly\hister
 
 - 07.04-Golang\nightly\lazygit
 
@@ -330,7 +356,11 @@
 
 - 07.07-Zig\proj\zig-playground
 
+- 19.01-Lua\proj\aegisub-lrc-scripts
+
 - 19.01-Lua\proj\emacsinsert.nvim
+
+- 19.01-Lua\proj\qrc-elrc-aegisub
 
 - 19.01-Lua\repo\Menori
 
@@ -343,6 +373,8 @@
 - 24.01-PowerShell\proj\adb_p7
 
 - 24.01-PowerShell\proj\gh_profile
+
+- 24.01-PowerShell\proj\github-pages-root
 
 - 24.01-PowerShell\proj\keyframe_generating
 
@@ -365,6 +397,8 @@
 - 24.01-PowerShell\proj\pwsh-star-coor-related
 
 - 24.01-PowerShell\proj\registry-utils
+
+- 24.01-PowerShell\proj\Tag-Binary-Justfile
 
 - 24.01-PowerShell\repo\amt-sdk-20-0-0-1
 
@@ -395,8 +429,6 @@
 - 25.01-Python\nightly\bincopy
 
 - 25.01-Python\nightly\catt
-
-- 25.01-Python\nightly\dist
 
 - 25.01-Python\nightly\doujinshi-dl
 
@@ -450,6 +482,8 @@
 
 - 25.02-TypeScript\nightly\mpls-vscode-client
 
+- 25.02-TypeScript\nightly\realtime-bpm-analyzer
+
 - 25.02-TypeScript\nightly\vimium
 
 - 25.02-TypeScript\nightly\wechat-article-exporter
@@ -467,8 +501,6 @@
 - 25.03-JavaScript\nightly\vllink-webui
 
 - 25.03-JavaScript\nightly\web_highlight
-
-- 25.03-JavaScript\nightly\xlsxdash
 
 - 25.03-JavaScript\proj\country-flags-emoji
 
@@ -503,6 +535,8 @@
 - 48.03-hlsl\proj\windows-terminal-shader-gallery
 
 - 48.03-hlsl\proj\windows-terminal-shaders
+
+- 60.01-OpenScad\nightly\3d-prints
 
 - 60.01-OpenScad\proj\openscad-playground
 

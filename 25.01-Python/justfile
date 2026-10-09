@@ -61,3 +61,9 @@ alias uins := uninstall
 [script,no-cd]
 uninstall:
     uv tool install (Split-path -Leaf $pwd)
+
+alias ei:= edit-in-ide
+[group('dev')]
+edit-in-ide:
+    code .
+
