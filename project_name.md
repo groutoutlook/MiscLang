@@ -80,6 +80,8 @@
 
 - 07.02-Rust\nightly\cache
 
+- 07.02-Rust\nightly\codex
+
 - 07.02-Rust\nightly\cyme
 
 - 07.02-Rust\nightly\doxx
@@ -187,6 +189,8 @@
 - 07.02-Rust\rarely\Neothesia
 
 - 07.02-Rust\rarely\numbat
+
+- 07.02-Rust\rarely\qrtool
 
 - 07.02-Rust\rarely\resvg
 
@@ -448,6 +452,8 @@
 
 - 25.01-Python\nightly\kanjiconv
 
+- 25.01-Python\nightly\KiPI
+
 - 25.01-Python\nightly\korean-romanizer
 
 - 25.01-Python\nightly\MCU-Flash-Tools
@@ -492,11 +498,17 @@
 
 - 25.02-TypeScript\repo\serial-terminal
 
+- 25.03-JavaScript\nightly\copyPath
+
 - 25.03-JavaScript\nightly\Get-cookies.txt-LOCALLY
 
 - 25.03-JavaScript\nightly\node-bcat
 
 - 25.03-JavaScript\nightly\refined-forgejo
+
+- 25.03-JavaScript\nightly\vimium
+
+- 25.03-JavaScript\nightly\vimium-c
 
 - 25.03-JavaScript\nightly\vllink-webui
 
@@ -551,4 +563,6 @@
 - 99.01-CSS\nightly\personalCSS
 
 - 99.02-CSV\nightly\Part-category-schema
+
+- 99.03-Typst\nightly\github-universe-2026
 

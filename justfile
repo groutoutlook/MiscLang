@@ -73,31 +73,31 @@ track_dir:
         git add $keepingDir --force
     }
 
-patch_folder := "patch"
-alias crs := check-repo-status
-[no-cd,script]
-check-repo-status:
-    gci |%{if($_.Attributes -eq "Directory" -and $_.BaseName -ne "{{patch_folder}}") {
-        $_.BaseName && (git -C $_ st) | oh
-    }
-    else {"no need to check"}
-    }
+# patch_folder := "patch"
+# alias crs := check-repo-status
+# [no-cd,script]
+# check-repo-status:
+#     gci |%{if($_.Attributes -eq "Directory" -and $_.BaseName -ne "{{patch_folder}}") {
+#         $_.BaseName && (git -C $_ st) | oh
+#     }
+#     else {"no need to check"}
+#     }
 
-alias cp := create-patch
-alias cpatch := create-patch
-[no-cd,script]
-create-patch:
-    # created based on the uncommit tho.
-    $final_name = "$(Get-Date -UFormat '%Y-%m-%d').patch"
-    git stk -m "Patch on $(Get-Date)"
-    git stash show -p > "./$final_name"
-    gci $final_name | oh
+# alias cp := create-patch
+# alias cpatch := create-patch
+# [no-cd,script]
+# create-patch:
+#     # created based on the uncommit tho.
+#     $final_name = "$(Get-Date -UFormat '%Y-%m-%d').patch"
+#     git stk -m "Patch on $(Get-Date)"
+#     git stash show -p > "./$final_name"
+#     gci $final_name | oh
     
-alias mp := move-patch
-[no-cd,script]
-move-patch: create-patch
-    mv -Path *patch -Destination ( "../{{patch_folder}}/$(split-path $pwd -Leaf)/" | % { ni $_ -ItemType Directory ; $destination = $_; write-output $_ }) -Force
-    gci $destination | Out-Host
+# alias mp := move-patch
+# [no-cd,script]
+# move-patch: create-patch
+#     mv -Path *patch -Destination ( "../{{patch_folder}}/$(split-path $pwd -Leaf)/" | % { ni $_ -ItemType Directory ; $destination = $_; write-output $_ }) -Force
+#     gci $destination | Out-Host
 
 
 alias pu := pull-update
